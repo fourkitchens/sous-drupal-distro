@@ -1,0 +1,34 @@
+{
+    "name": "fourkitchens/sous",
+    "description": "A base Drupal distribution profile with a theme based on Emulsify with Gatsby.",
+    "type": "drupal-profile",
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "Adam Erickson",
+            "email": "adam@fourkitchens.com"
+        },
+        {
+            "name": "Chris Martin",
+            "email": "chris.martin@fourkitchens.com"
+        },
+        {
+            "name": "Callin Mullaney",
+            "email": "callin@fourkitchens.com"
+        },
+        {
+            "name": "Evan Willhite",
+            "email": "evan@fourkitchens.com"
+        },
+        {
+            "name": "Jeff Tomlinson",
+            "email": "jeff@fourkitchens.com"
+        },
+        {
+            "name": "Mike Goulding",
+            "email": "mike.goulding@fourkitchens.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
