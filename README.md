@@ -1,2 +1,2 @@
 # sous
-A 4K base Drupal distribution profile based on Emulsify with Gatsby
+A base Drupal distribution profile with a theme based on Emulsify with Gatsby.
