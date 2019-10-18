@@ -7,18 +7,44 @@ version: '8.x-1.0'
 
 distribution:
   name: Sous
+  install:
+    theme: thunder_admin
 
 # Required modules
 dependencies:
-  # - drupal:media
-  # - drupal:node
-  # - drupal:views
+   - drupal:media
+   - drupal:node
+   - drupal:views
+   - drupal:field
+   - drupal:taxonomy
+   - drupal:user
 
 install:
   # core
+  - drupal:automated_cron
   - drupal:block
+  - drupal:block_content
+  - drupal:breakpoint
+  - drupal:ckeditor
+  - drupal:config
+  - drupal:contextual
+  - drupal:dynamic_page_cache
+  - drupal:field_ui
+  - drupal:filter
+  - drupal:inline_form_errors
+  - drupal:jsonapi
+  - drupal:menu_link_content
+  - drupal:menu_ui
+  - drupal:path
+  - drupal:responsive_image
+  - drupal:system
+  - drupal:editor
+  - drupal:toolbar
+  - drupal:update
+  - drupal:views_ui
 # contrib
   - blazy:blazy
 
 themes:
   - seven
+  - thunder_admin
