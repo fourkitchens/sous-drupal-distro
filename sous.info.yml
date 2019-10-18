@@ -37,6 +37,7 @@ install:
   - drupal:menu_ui
   - drupal:path
   - drupal:responsive_image
+  - drupal:shortcut
   - drupal:system
   - drupal:editor
   - drupal:toolbar
