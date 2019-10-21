@@ -43,6 +43,31 @@
     "require": {
         "drupal/core": "8.7.8",
         "drupal/thunder_admin": "^3.0",
-        "drupal/blazy": "^2.0-rc3"
+        "drupal/blazy": "2.x-dev",
+        "drupal/allowed_formats": "^1.1",
+        "drupal/easy_breadcrumb": "1.x-dev",
+        "drupal/ctools": "3.x-dev",
+        "drupal/taxonomy_manager": "1.x-dev",
+        "drupal/field_group": "3.x-dev",
+        "drupal/linkit": "5.x-dev",
+        "drupal/pathauto": "1.x-dev",
+        "drupal/token": "1.x-dev",
+        "drupal/components": "2.x-dev",
+        "drupal/twig_tweak": "2.x-dev",
+        "drupal/google_tag": "1.x-dev",
+        "drupal/redirect": "1.x-dev",
+        "drupal/paragraphs": "1.x-dev",
+        "drupal/paragraphs_features": "1.x-dev",
+        "drupal/entity_browser": "2.x-dev",
+        "drupal/file_browser": "1.x-dev",
+        "drupal/entity_embed": "1.x-dev",
+        "drupal/dropzonejs": "2.x-dev",
+        "drupal/content_browser": "1.x-dev",
+        "drupal/media_entity_browser": "2.x-dev",
+        "drupal/entity_browser_enhanced": "1.x-dev",
+        "drupal/slick_browser": "2.x-dev",
+        "drupal/jsonapi_extras": "3.x-dev",
+        "drupal/focal_point": "1.x-dev",
+        "drupal/crop": "2.x-dev"
     }
 }
