@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c8b8c84c26a9d10cb26f492cca49244",
+    "content-hash": "b1cb36d317c43eb32dd5d49efee65f92",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4089,6 +4089,25 @@
             ]
         },
         {
+            "name": "npm-asset/slick",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:kamicane/slick.git",
+                "reference": "6eb8da55711e3b0ca81777b96cf45da868af382f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kamicane/slick/zipball/6eb8da55711e3b0ca81777b96cf45da868af382f",
+                "reference": "6eb8da55711e3b0ca81777b96cf45da868af382f"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT (http://mootools.net/license.txt)"
+            ],
+            "time": "2015-05-03T05:21:25+00:00"
+        },
+        {
             "name": "npm-asset/wolfy87-eventemitter",
             "version": "4.3.0",
             "dist": {
@@ -6358,6 +6377,7 @@
         "drupal/jsonapi_extras": 20,
         "drupal/focal_point": 20,
         "drupal/crop": 20,
+        "npm-asset/slick": 20,
         "symfony/var-dumper": 20
     },
     "prefer-stable": false,

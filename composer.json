@@ -77,7 +77,8 @@
         "npm-asset/dropzone": "^5.5.1",
         "npm-asset/imagesloaded": "^3.2.0",
         "bower-asset/masonry-layout": "^4.0.0",
-        "fourkitchens/emulsify": "^3.1"
+        "fourkitchens/emulsify": "^3.1",
+        "npm-asset/slick": "dev-master"
     },
     "require-dev": {
         "symfony/var-dumper": "4.4.x-dev"
