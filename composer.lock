@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b1cb36d317c43eb32dd5d49efee65f92",
+    "content-hash": "9e2d5bae6bae8b52fe5595761e7352be",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2806,26 +2806,23 @@
         },
         {
             "name": "drupal/linkit",
-            "version": "dev-5.x",
+            "version": "dev-4.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/linkit.git",
-                "reference": "9b54704679d65869e711239339fe149a0b97a69a"
+                "reference": "c03d1d7d91e536786db3741dfc504ce834c19f73"
             },
             "require": {
                 "drupal/core": "~8.0"
             },
-            "require-dev": {
-                "drupal/imce": "*"
-            },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-5.x": "5.x-dev"
+                    "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-beta8+10-dev",
-                    "datestamp": "1559774281",
+                    "version": "8.x-4.3+0-dev",
+                    "datestamp": "1490127184",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -2850,7 +2847,7 @@
                 "source": "http://cgit.drupalcode.org/linkit",
                 "issues": "http://drupal.org/project/linkit"
             },
-            "time": "2019-06-05T22:35:41+00:00"
+            "time": "2017-03-21T19:57:17+00:00"
         },
         {
             "name": "drupal/media_entity_browser",
@@ -2922,7 +2919,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/paragraphs.git",
-                "reference": "e8f27b7e686fb93015683f5df2e8b2508117e61b"
+                "reference": "6c234cdec2f885b5c38e353119318418ae7046b3"
             },
             "require": {
                 "drupal/core": "~8",
@@ -2950,8 +2947,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.9+10-dev",
-                    "datestamp": "1569824885",
+                    "version": "8.x-1.9+11-dev",
+                    "datestamp": "1570305487",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -2989,7 +2986,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/paragraphs"
             },
-            "time": "2019-10-05T19:53:59+00:00"
+            "time": "2019-10-22T22:49:10+00:00"
         },
         {
             "name": "drupal/paragraphs_features",
@@ -4090,22 +4087,19 @@
         },
         {
             "name": "npm-asset/slick",
-            "version": "dev-master",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
                 "url": "git@github.com:kamicane/slick.git",
-                "reference": "6eb8da55711e3b0ca81777b96cf45da868af382f"
+                "reference": "7c34d639788a466ec667a12ae4e815531b94edf7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kamicane/slick/zipball/6eb8da55711e3b0ca81777b96cf45da868af382f",
-                "reference": "6eb8da55711e3b0ca81777b96cf45da868af382f"
+                "url": "https://api.github.com/repos/kamicane/slick/zipball/7c34d639788a466ec667a12ae4e815531b94edf7",
+                "reference": "7c34d639788a466ec667a12ae4e815531b94edf7"
             },
             "type": "npm-asset",
-            "license": [
-                "MIT (http://mootools.net/license.txt)"
-            ],
-            "time": "2015-05-03T05:21:25+00:00"
+            "time": "2012-03-19T02:18:33+00:00"
         },
         {
             "name": "npm-asset/wolfy87-eventemitter",
@@ -6354,30 +6348,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/blazy": 20,
-        "drupal/easy_breadcrumb": 20,
-        "drupal/ctools": 20,
-        "drupal/taxonomy_manager": 20,
-        "drupal/field_group": 20,
-        "drupal/linkit": 20,
-        "drupal/pathauto": 20,
-        "drupal/token": 20,
-        "drupal/twig_tweak": 20,
-        "drupal/google_tag": 20,
-        "drupal/redirect": 20,
-        "drupal/paragraphs": 20,
-        "drupal/paragraphs_features": 20,
-        "drupal/entity_browser": 20,
-        "drupal/entity_embed": 20,
-        "drupal/dropzonejs": 20,
-        "drupal/content_browser": 20,
-        "drupal/media_entity_browser": 20,
-        "drupal/entity_browser_enhanced": 20,
         "drupal/slick_browser": 20,
-        "drupal/jsonapi_extras": 20,
-        "drupal/focal_point": 20,
-        "drupal/crop": 20,
-        "npm-asset/slick": 20,
         "symfony/var-dumper": 20
     },
     "prefer-stable": false,
