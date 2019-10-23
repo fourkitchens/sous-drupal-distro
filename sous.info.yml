@@ -35,6 +35,7 @@ install:
   - drupal:jsonapi
   - drupal:menu_link_content
   - drupal:menu_ui
+  - drupal:options
   - drupal:path
   - drupal:responsive_image
   - drupal:shortcut
