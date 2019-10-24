@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.media_entity_browser_modal
+    - entity_browser.browser.media_entity_browser
     - field.field.paragraph.image.field_image
     - paragraphs.paragraphs_type.image
   module:
@@ -15,7 +15,7 @@ content:
   field_image:
     weight: 0
     settings:
-      entity_browser: media_entity_browser_modal
+      entity_browser: media_entity_browser
       field_widget_display: label
       field_widget_edit: true
       field_widget_remove: true
