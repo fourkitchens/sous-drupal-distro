@@ -57,7 +57,6 @@ install:
   - file_browser:file_browser
   - focal_point:focal_point
   - google_tag:google_tag
-  - jsonapi_extras:jsonapi_extras
   - libraries:libraries
   - linkit:linkit
   - media_entity_browser:media_entity_browser
