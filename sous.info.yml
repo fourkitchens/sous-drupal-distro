@@ -7,8 +7,6 @@ version: '8.x-1.0'
 
 distribution:
   name: Sous
-  install:
-    theme: thunder_admin
 
 # Required modules
 dependencies:

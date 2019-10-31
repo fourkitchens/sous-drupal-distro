@@ -44,7 +44,7 @@
         "composer/installers": "^1.2",
         "oomphinc/composer-installers-extender": "^1.1",
         "cweagans/composer-patches": "^1.6.5",
-        "drupal/core": "8.7.8",
+        "drupal/core": "^8.7",
         "drupal/thunder_admin": "^3.0",
         "drupal/blazy": "^2.0",
         "drupal/allowed_formats": "^1.1",
@@ -70,7 +70,6 @@
         "drupal/media_entity_browser": "^2.0",
         "drupal/entity_browser_enhanced": "^1.0",
         "drupal/slick_browser": "2.x-dev",
-        "drupal/jsonapi_extras": "^3.12",
         "drupal/focal_point": "^1.2",
         "drupal/crop": "^2.0",
         "npm-asset/blazy": "^1.8",
@@ -87,19 +86,19 @@
         "installer-name": "sous",
         "installer-types": ["npm-asset", "bower-asset"],
         "installer-paths": {
-            "modules/contrib/{$name}": [
+            "web/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
-            "themes/contrib/{$name}": [
+            "web/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ],
-            "drush/contrib/{$name}": [
+            "web/drush/contrib/{$name}": [
                 "type:drupal-drush"
             ],
-            "libraries/masonry": [
+            "web/libraries/masonry": [
                 "bower-asset/masonry-layout"
             ],
-            "libraries/{$name}": [
+            "web/libraries/{$name}": [
                 "type:npm-asset",
                 "type:drupal-library"
             ]
