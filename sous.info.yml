@@ -30,7 +30,6 @@ install:
   - drupal:field_ui
   - drupal:filter
   - drupal:inline_form_errors
-  - drupal:jsonapi
   - drupal:menu_link_content
   - drupal:menu_ui
   - drupal:options
