@@ -1,20 +1,18 @@
-uuid: 8d027076-2e3f-49bc-94a7-d2c0795efd9a
+uuid: b249463a-1b36-4962-99b6-9aefdb8f1831
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.media.field_caption
-    - media.type.image
-_core:
-  default_config_hash: sJInD2ZmmV0Kv4rH_8eAYtEMMzew_jzCh4bdLrYsr5c
-id: media.image.field_caption
+    - media.type.video
+id: media.video.field_caption
 field_name: field_caption
 entity_type: media
-bundle: image
+bundle: video
 label: Caption
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
