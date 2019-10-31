@@ -3,16 +3,13 @@ status: true
 dependencies:
   config:
     - entity_browser.browser.media_entity_browser_modal
-    - field.field.node.page.field_content_body
-    - field.field.node.page.field_seo_title
-    - field.field.node.page.field_tags
-    - field.field.node.page.field_teaser_media
-    - field.field.node.page.field_teaser_text
-    - node.type.page
+    - field.field.node.frontpage.field_seo_title
+    - field.field.node.frontpage.field_teaser_media
+    - field.field.node.frontpage.field_teaser_text
+    - node.type.frontpage
   module:
     - entity_browser
     - field_group
-    - paragraphs
     - path
 third_party_settings:
   field_group:
@@ -21,9 +18,8 @@ third_party_settings:
         - title
         - field_seo_title
       parent_name: group_main
-      weight: 1
+      weight: 12
       format_type: tab
-      region: content
       format_settings:
         description: ''
         formatter: open
@@ -31,60 +27,13 @@ third_party_settings:
         id: ''
         classes: ''
       label: Header
-    group_teaser:
-      children:
-        - field_teaser_media
-        - field_teaser_text
-      parent_name: group_main
-      weight: 2
-      format_type: tab
       region: content
-      format_settings:
-        id: ''
-        classes: ''
-        description: ''
-        open: true
-        required_fields: true
-        formatter: closed
-      label: Teaser
-    group_content:
-      children:
-        - field_content_body
-      parent_name: group_main
-      weight: 4
-      format_type: tab
-      region: content
-      format_settings:
-        id: ''
-        classes: ''
-        description: ''
-        open: true
-        required_fields: true
-        formatter: closed
-      label: Content
-    group_taxonomies:
-      children:
-        - field_tags
-      parent_name: group_main
-      weight: 3
-      format_type: tab
-      region: content
-      format_settings:
-        id: ''
-        classes: ''
-        description: ''
-        open: true
-        required_fields: true
-        formatter: closed
-      label: Taxonomies
     group_main:
       children:
         - group_header
         - group_teaser
-        - group_taxonomies
-        - group_content
       parent_name: ''
-      weight: 0
+      weight: 1
       format_type: tabs
       format_settings:
         id: ''
@@ -92,9 +41,24 @@ third_party_settings:
         direction: vertical
       label: Main
       region: content
-id: node.page.default
+    group_teaser:
+      children:
+        - field_teaser_text
+        - field_teaser_media
+      parent_name: group_main
+      weight: 13
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Teaser
+      region: content
+id: node.frontpage.default
 targetEntityType: node
-bundle: page
+bundle: frontpage
 mode: default
 content:
   created:
@@ -103,31 +67,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_content_body:
-    type: entity_reference_paragraphs
-    weight: 11
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
-    region: content
   field_seo_title:
-    weight: 2
+    weight: 1
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  field_tags:
-    weight: 11
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
     region: content
   field_teaser_media:
     weight: 10
@@ -145,7 +91,7 @@ content:
     type: entity_browser_entity_reference
     region: content
   field_teaser_text:
-    weight: 11
+    weight: 9
     settings:
       rows: 5
       placeholder: ''
@@ -154,7 +100,7 @@ content:
     region: content
   path:
     type: path
-    weight: 9
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -162,26 +108,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 4
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 8
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 5
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 1
+    weight: 0
     region: content
     settings:
       size: 60
@@ -198,7 +144,7 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 10
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
