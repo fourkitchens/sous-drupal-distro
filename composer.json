@@ -92,7 +92,7 @@
             "web/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ],
-            "web/drush/contrib/{$name}": [
+            "drush/contrib/{$name}": [
                 "type:drupal-drush"
             ],
             "web/libraries/masonry": [
