@@ -1,29 +1,27 @@
-uuid: 9a9d4093-17cb-40cc-b99d-4071d4838c19
+uuid: d7df3875-d0ad-44f1-b166-f6929d735dd6
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.media.field_description
-    - media.type.image
+    - media.type.video
   module:
     - allowed_formats
     - text
 third_party_settings:
   allowed_formats:
-    basic_html: '0'
+    basic_html: basic_html
     restricted_html: '0'
     full_html: '0'
     plain_text: '0'
-_core:
-  default_config_hash: j-HZ42ghxfl57upak8_NXjwQBgmskuvTb15eNGnhFSM
-id: media.image.field_description
+id: media.video.field_description
 field_name: field_description
 entity_type: media
-bundle: image
+bundle: video
 label: Description
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

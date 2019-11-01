@@ -1,20 +1,18 @@
-uuid: e5b6968c-44ca-43b3-bfe6-cf167e980c20
+uuid: 430ae6a8-63b0-4ea5-8c69-d3a637ca8841
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.media.field_copyright
-    - media.type.image
-_core:
-  default_config_hash: '-kz67Y3kG2rc-eqIc3TD_H80ygpbHm75AAytXwjlQIU'
-id: media.image.field_copyright
+    - media.type.video
+id: media.video.field_copyright
 field_name: field_copyright
 entity_type: media
-bundle: image
+bundle: video
 label: Copyright
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

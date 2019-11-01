@@ -1,21 +1,19 @@
-uuid: 674716cc-7d23-4702-a3b9-82ab21ef6d32
+uuid: b6fdec3a-fcef-4764-9b79-acd74d4ea356
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.media.field_tags
-    - media.type.image
+    - media.type.video
     - taxonomy.vocabulary.tags
-_core:
-  default_config_hash: _eBQA5XFiZu4_k8DJRk-hcerzRm5mEdQvZS1TzjRJlE
-id: media.image.field_tags
+id: media.video.field_tags
 field_name: field_tags
 entity_type: media
-bundle: image
+bundle: video
 label: Tags
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

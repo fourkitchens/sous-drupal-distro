@@ -1,26 +1,22 @@
-uuid: 1d2565d0-a5e1-43b4-a2cf-e1c65640bcf1
+uuid: 2330600f-6543-48bb-aa2b-fe5fefe4c1ec
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.video.field_caption
-    - field.field.media.video.field_copyright
-    - field.field.media.video.field_description
-    - field.field.media.video.field_media_oembed_video
-    - field.field.media.video.field_tags
-    - field.field.media.video.field_transcript
-    - media.type.video
+    - field.field.media.file.field_description
+    - field.field.media.file.field_media_file
+    - field.field.media.file.field_tags
+    - media.type.file
   module:
     - field_group
-    - link
-    - media
+    - file
     - text
 third_party_settings:
   field_group:
     group_tabs:
       children:
-        - group_video_content
-        - group_video_details
+        - group_file_content
+        - group_file_details
       parent_name: ''
       weight: 0
       format_type: tabs
@@ -30,12 +26,12 @@ third_party_settings:
         direction: horizontal
       label: Tabs
       region: content
-    group_video_content:
+    group_file_content:
       children:
         - name
-        - field_media_oembed_video
+        - field_media_file
       parent_name: group_tabs
-      weight: 12
+      weight: 9
       format_type: tab
       format_settings:
         id: ''
@@ -43,17 +39,14 @@ third_party_settings:
         description: ''
         formatter: open
         required_fields: true
-      label: 'Video Content'
+      label: 'File Content'
       region: content
-    group_video_details:
+    group_file_details:
       children:
         - field_description
-        - field_caption
-        - field_copyright
-        - field_transcript
         - field_tags
       parent_name: group_tabs
-      weight: 13
+      weight: 10
       format_type: tab
       format_settings:
         id: ''
@@ -61,31 +54,13 @@ third_party_settings:
         description: ''
         formatter: closed
         required_fields: true
-      label: 'Video Details'
+      label: 'File Details'
       region: content
-_core:
-  default_config_hash: 2ot7CGx5Q1vPlw4B7c1Qbz-3vhqocu1EOyT5yT_fALE
-id: media.video.default
+id: media.file.default
 targetEntityType: media
-bundle: video
+bundle: file
 mode: default
 content:
-  field_caption:
-    weight: 4
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textarea
-    region: content
-  field_copyright:
-    weight: 5
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_description:
     weight: 3
     settings:
@@ -94,35 +69,26 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_media_oembed_video:
-    type: oembed_textfield
-    weight: 12
+  field_media_file:
+    weight: 2
     settings:
-      size: 60
-      placeholder: ''
+      progress_indicator: throbber
     third_party_settings: {  }
+    type: file_generic
     region: content
   field_tags:
-    weight: 7
+    weight: 4
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_transcript:
-    weight: 6
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
+    type: entity_reference_autocomplete_tags
     region: content
   name:
     type: string_textfield
-    weight: 11
+    weight: 1
     region: content
     settings:
       size: 60
@@ -132,7 +98,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 1
+    weight: 4
     region: content
     third_party_settings: {  }
 hidden:
