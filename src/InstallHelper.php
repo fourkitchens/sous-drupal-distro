@@ -102,18 +102,14 @@ class InstallHelper implements ContainerInjectionInterface {
 
           // Setting up the media entity.
           if (!empty($content['teaser_media'])) {
-            $image_path = $profile_path . '/default_content/images/' . $content['teaser_media'];
-            $file_data = file_get_contents($image_path);
-            $file = file_save_data($file_data, 'public:://' . $content['teaser_media'], $this->fileSystem::EXISTS_REPLACE);
             $media_entity = Media::create([
               'bundle' => 'image',
               'name' => $content['title'] . '-image',
               'uid' => 1,
-              'field_media_image' => [
-                'target_id' => $file->id(),
-                'alt' => 'default_content',
-              ],
+              'status' => 1,
             ]);
+            $media_entity->field_media_image->generateSampleItems();
+            $media_entity->save();
             $values['field_teaser_media'] = [
               'target_id' => $media_entity->id(),
             ];
