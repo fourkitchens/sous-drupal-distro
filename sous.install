@@ -4,6 +4,9 @@
  * Install, update and uninstall functions for Sous.
  */
 
+use Drupal\node\Entity;
+use Drupal\sous\InstallHelper;
+
 /**
  * Implements hook_install().
  *
@@ -16,5 +19,8 @@ function sous_install() {
   include_once DRUPAL_ROOT . '/core/profiles/standard/standard.install';
   standard_install();
 
-  // Can add code in here.
+  // Importing default content into the site.
+  if (!\Drupal::service('config.installer')->isSyncing()) {
+    \Drupal::classResolver(InstallHelper::class)->importContent();
+  }
 }
