@@ -22,5 +22,13 @@ function sous_install() {
   // Importing default content into the site.
   if (!\Drupal::service('config.installer')->isSyncing()) {
     \Drupal::classResolver(InstallHelper::class)->importContent();
+
+    // Setting the content we set to the system defaults.
+    \Drupal::configFactory()
+      ->getEditable('system.site')
+      ->set('page.front', '/node/1')
+      ->set('page.403', '/node/2')
+      ->set('page.404', '/node/3')
+      ->save(TRUE);
   }
 }
