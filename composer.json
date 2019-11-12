@@ -113,9 +113,9 @@
         },
         "drupal-scaffold": {
             "file-mapping": {
-                "[web-root]/sites/development.services.php": {
+                "[web-root]/sites/development.services.yml": {
                   "mode": "replace",
-                  "path": "assets/scaffold/files/development.services.php",
+                  "path": "assets/scaffold/files/development.services.yml",
                   "overwrite": false
                 }
             }
