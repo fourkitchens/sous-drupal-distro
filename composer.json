@@ -110,6 +110,15 @@
             "drupal/content_browser": {
                 "3089478": "https://www.drupal.org/files/issues/2019-10-22/profile-library-support-3089478-2.patch"
             }
+        },
+        "drupal-scaffold": {
+            "file-mapping": {
+                "[web-root]/sites/development.services.php": {
+                  "mode": "replace",
+                  "path": "assets/scaffold/files/development.services.php",
+                  "overwrite": false
+                }
+            }
         }
     }
 }
