@@ -60,6 +60,7 @@ install:
   - libraries:libraries
   - linkit:linkit
   - media_entity_browser:media_entity_browser
+  - metatag:metatag
   - paragraphs:paragraphs
   - paragraphs_features:paragraphs_features
   - pathauto:pathauto
