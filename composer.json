@@ -1,6 +1,6 @@
 {
     "name": "fourkitchens/sous",
-    "description": "A base Drupal distribution profile with a theme based on Emulsify with Gatsby.",
+    "description": "A base Drupal distribution profile with a theme based on Emulsify Design System.",
     "type": "drupal-profile",
     "license": "MIT License",
     "authors": [
@@ -76,8 +76,8 @@
         "npm-asset/dropzone": "^5.5.1",
         "npm-asset/imagesloaded": "^3.2.0",
         "bower-asset/masonry-layout": "^4.0.0",
-        "fourkitchens/emulsify": "^3.1",
-        "npm-asset/slick": "^1.12"
+        "npm-asset/slick": "^1.12",
+        "emulsify-ds/emulsify-design-system": "^1.0.0-alpha.5"
     },
     "require-dev": {
         "symfony/var-dumper": "4.4.x-dev"

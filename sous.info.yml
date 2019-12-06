@@ -1,6 +1,6 @@
 name: Sous
 type: profile
-description: 'A base Drupal distribution profile with a theme based on Emulsify with Gatsby.'
+description: 'A base Drupal distribution profile with a theme based on Emulsify Design System.'
 project: sous
 core: 8.x
 version: '8.x-1.0'
