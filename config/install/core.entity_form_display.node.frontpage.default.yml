@@ -1,8 +1,10 @@
+uuid: 755f1699-b541-40c5-9f88-72868d3ca7f8
 langcode: en
 status: true
 dependencies:
   config:
     - entity_browser.browser.media_entity_browser_modal
+    - field.field.node.frontpage.field_metadata
     - field.field.node.frontpage.field_seo_title
     - field.field.node.frontpage.field_teaser_media
     - field.field.node.frontpage.field_teaser_text
@@ -10,6 +12,7 @@ dependencies:
   module:
     - entity_browser
     - field_group
+    - metatag
     - path
 third_party_settings:
   field_group:
@@ -56,6 +59,8 @@ third_party_settings:
         required_fields: true
       label: Teaser
       region: content
+_core:
+  default_config_hash: 4f73Zul7nnAYZoWTuznK7qqM4Ni_xAgbESwv4xA-WZ8
 id: node.frontpage.default
 targetEntityType: node
 bundle: frontpage
@@ -67,6 +72,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_metadata:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
   field_seo_title:
     weight: 1
     settings:

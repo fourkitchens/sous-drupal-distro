@@ -1,9 +1,11 @@
+uuid: 1c5cc2a3-cd8d-4c89-9a3b-d83c4eaa5b50
 langcode: en
 status: true
 dependencies:
   config:
     - entity_browser.browser.media_entity_browser_modal
     - field.field.node.page.field_content_body
+    - field.field.node.page.field_metadata
     - field.field.node.page.field_seo_title
     - field.field.node.page.field_tags
     - field.field.node.page.field_teaser_media
@@ -12,6 +14,7 @@ dependencies:
   module:
     - entity_browser
     - field_group
+    - metatag
     - paragraphs
     - path
 third_party_settings:
@@ -92,6 +95,8 @@ third_party_settings:
         direction: vertical
       label: Main
       region: content
+_core:
+  default_config_hash: 4BXnR2Z4Akunxh2EqJzFWfXl_CZs179KH2G5QfG_F-M
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -120,6 +125,12 @@ content:
         duplicate: duplicate
         collapse_edit_all: collapse_edit_all
     third_party_settings: {  }
+    region: content
+  field_metadata:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_seo_title:
     weight: 2

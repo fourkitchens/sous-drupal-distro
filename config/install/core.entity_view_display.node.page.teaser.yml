@@ -1,9 +1,11 @@
+uuid: abdc9d2c-a416-4a26-9cc2-a1a86a5d4d05
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.field_content_body
+    - field.field.node.page.field_metadata
     - field.field.node.page.field_seo_title
     - field.field.node.page.field_tags
     - field.field.node.page.field_teaser_media
@@ -11,6 +13,8 @@ dependencies:
     - node.type.page
   module:
     - user
+_core:
+  default_config_hash: T70-rdat8MjhPSfb3AiQcOGfmqNLSegD3Z4XX7qI4C8
 id: node.page.teaser
 targetEntityType: node
 bundle: page
@@ -39,5 +43,6 @@ content:
     third_party_settings: {  }
 hidden:
   field_content_body: true
+  field_metadata: true
   field_seo_title: true
   field_tags: true
