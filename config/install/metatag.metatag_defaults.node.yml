@@ -11,3 +11,8 @@ tags:
   keywords: '[node:field_tags]'
   title: '[node:field_seo_title]'
   canonical_url: '[node:url]'
+  og_type: '[node:content-type]'
+  og_url: '[node:path]'
+  og_title: '[node:field_seo_title]'
+  og_description: '[node:field_teaser_text]'
+  og_updated_time: '[node:changed:html_datetime]'
