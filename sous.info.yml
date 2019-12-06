@@ -61,6 +61,7 @@ install:
   - linkit:linkit
   - media_entity_browser:media_entity_browser
   - metatag:metatag
+  - metatag:metatag_open_graph
   - paragraphs:paragraphs
   - paragraphs_features:paragraphs_features
   - pathauto:pathauto
