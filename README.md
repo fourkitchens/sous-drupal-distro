@@ -1,4 +1,4 @@
-# sous
+# Sous Distribution Package
 
 A base Drupal distribution profile with a theme based on Emulsify Design System.
 
