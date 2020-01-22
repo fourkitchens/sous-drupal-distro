@@ -1,5 +1,5 @@
 {
-    "name": "fourkitchens/sous",
+    "name": "fourkitchens/sous-drupal-distro",
     "description": "A base Drupal distribution profile with a theme based on Emulsify Design System.",
     "type": "drupal-profile",
     "license": "MIT License",
