@@ -1,12 +1,15 @@
+uuid: fe0fbdf7-5c67-4697-b22f-8988a81f3c98
 langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.media_entity_browser
+    - entity_browser.browser.video_browser
     - field.field.paragraph.video.field_video
     - paragraphs.paragraphs_type.video
   module:
     - entity_browser
+_core:
+  default_config_hash: 77iThq2uaHojDKF20emrCZFw5bEz9akALILhq8uCE9E
 id: paragraph.video.default
 targetEntityType: paragraph
 bundle: video
@@ -15,14 +18,15 @@ content:
   field_video:
     weight: 0
     settings:
-      entity_browser: media_entity_browser
-      field_widget_display: label
+      entity_browser: video_browser
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: preview
       field_widget_edit: true
       field_widget_remove: true
       selection_mode: selection_append
       field_widget_replace: false
       open: false
-      field_widget_display_settings: {  }
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content

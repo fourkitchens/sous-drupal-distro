@@ -1,12 +1,15 @@
+uuid: 55bd2550-bdfb-4d93-b501-865f6cbbe4e9
 langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.media_entity_browser
+    - entity_browser.browser.image_browser
     - field.field.paragraph.image.field_image
     - paragraphs.paragraphs_type.image
   module:
     - entity_browser
+_core:
+  default_config_hash: Vem4qu1N_AtxYSL2PvtKFLQwS6jnl9pM5OpBbnd4uqQ
 id: paragraph.image.default
 targetEntityType: paragraph
 bundle: image
@@ -15,14 +18,15 @@ content:
   field_image:
     weight: 0
     settings:
-      entity_browser: media_entity_browser
-      field_widget_display: label
+      entity_browser: image_browser
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: preview
       field_widget_edit: true
       field_widget_remove: true
       selection_mode: selection_append
       field_widget_replace: false
       open: false
-      field_widget_display_settings: {  }
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
