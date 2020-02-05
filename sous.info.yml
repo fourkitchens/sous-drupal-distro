@@ -41,7 +41,7 @@ install:
   - drupal:toolbar
   - drupal:update
   - drupal:views_ui
-# contrib
+  # contrib
   - blazy:blazy
   - allowed_formats:allowed_formats
   - components:components
