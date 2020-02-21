@@ -43,7 +43,7 @@ install:
   - drupal:toolbar
   - drupal:update
   - drupal:views_ui
-# contrib
+  # contrib
   - blazy:blazy
   - allowed_formats:allowed_formats
   - components:components
@@ -73,6 +73,7 @@ install:
   - taxonomy_manager:taxonomy_manager
   - token:token
   - twig_tweak:twig_tweak
+  - emulsify_twig:emulsify_twig
 
 themes:
   - seven
