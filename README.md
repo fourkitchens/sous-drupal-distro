@@ -1,4 +1,4 @@
-![Sous featuring Emulsify](https://github.com/fourkitchens/sous-drupal-distro/themes/sous_admin/assets/images/Sous.png.png "Sous featuring Emulsify")
+![Sous featuring Emulsify](https://github.com/fourkitchens/sous-drupal-distro/themes/sous_admin/assets/images/Sous.png "Sous featuring Emulsify")
 
 # Sous Distribution Package
 
