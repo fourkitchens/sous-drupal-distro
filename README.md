@@ -1,3 +1,5 @@
+![Sous featuring Emulsify](https://github.com/fourkitchens/sous-drupal-distro/themes/sous_admin/assets/images/Sous.png.png "Sous featuring Emulsify")
+
 # Sous Distribution Package
 
 A base Drupal distribution profile with a theme based on Emulsify Design System.
