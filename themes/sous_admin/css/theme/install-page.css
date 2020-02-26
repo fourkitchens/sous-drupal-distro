@@ -166,7 +166,7 @@ h2 {
   color: #35AA4E;
 }
 
-.task-list li.done:before {
+.task-list li.done::before {
   background: url(../../assets/images/icon-check.svg) left center no-repeat;
   display: block;
   float: left;
@@ -237,11 +237,8 @@ h2 {
 .progress__track {
   border-radius: 0;
   background-color: #DDE7EA;
-
-}
-.cooking{
-  background-image: url(../../assets/images/cooking.svg);
-  min-width: 70px;
+  width: 100%;
+  min-height: 4px;
 }
 
 .progress__bar {
@@ -252,9 +249,35 @@ h2 {
   background-image: none;
   border: none;
   margin: 0;
+  width: 40%;
+  height: 16px;
+  position: relative;
+}
+
+.progress__bar::after {
+  background: url(../../assets/images/cooking.svg); no-repeat top left;
+  content: '';
+  width: 68px;
+  height: 68px;
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
 }
 
 /* Breakpoints */
+@media (max-width: 48em) {
+  .layout-container {
+    padding: 40px;
+  }
+  .branding {
+    margin: 20px 0 0 0;
+  }
+  .layout-sidebar-first {
+    text-align: center;
+  }
+}
+
 @media (min-width: 48em) {
   .layout-container {
     max-width: 940px;
