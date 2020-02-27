@@ -7,6 +7,8 @@ version: '8.x-1.0'
 
 distribution:
   name: Sous
+  install:
+    theme: sous_admin
 
 # Required modules
 dependencies:
@@ -76,3 +78,4 @@ install:
 themes:
   - seven
   - thunder_admin
+  - sous_admin
