@@ -1,4 +1,3 @@
-uuid: bb6c9323-5845-4ab9-9d17-040d8d204dce
 langcode: en
 status: true
 dependencies:
@@ -7,8 +6,6 @@ dependencies:
 third_party_settings:
   crop:
     image_field: null
-_core:
-  default_config_hash: gnx0CAVlP7R2LovWwdmZURVwJDInTDurDzuFS7AKsII
 id: video
 label: Video
 description: ''

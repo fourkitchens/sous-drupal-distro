@@ -1,4 +1,3 @@
-uuid: 80e04610-a056-4d9d-8c51-9d4282f4928a
 langcode: en
 status: true
 dependencies:
@@ -9,8 +8,6 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-_core:
-  default_config_hash: a9V9YsC8LncYlP-7Ie0cRhYd_y0O76Ivgn6i7erJj0U
 name: Page
 type: page
 description: 'A general content type for all standard pages.'
