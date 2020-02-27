@@ -7,6 +7,8 @@ version: '8.x-1.0'
 
 distribution:
   name: Sous
+  install:
+    theme: sous_admin
 
 # Required modules
 dependencies:
@@ -71,7 +73,9 @@ install:
   - taxonomy_manager:taxonomy_manager
   - token:token
   - twig_tweak:twig_tweak
+  - emulsify_twig:emulsify_twig
 
 themes:
   - seven
   - thunder_admin
+  - sous_admin
