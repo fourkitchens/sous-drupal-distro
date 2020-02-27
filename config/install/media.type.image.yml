@@ -1,4 +1,3 @@
-uuid: b7ffdead-83d6-49f4-bbe0-2f595959a545
 langcode: en
 status: true
 dependencies:
@@ -7,8 +6,6 @@ dependencies:
 third_party_settings:
   crop:
     image_field: field_media_image
-_core:
-  default_config_hash: ewURowgTWygb8pJlvp663r4rjzgU7TFMJx0ZUEGC-ps
 id: image
 label: Image
 description: ''

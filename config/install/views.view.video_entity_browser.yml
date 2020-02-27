@@ -1,4 +1,3 @@
-uuid: 536a8618-c889-4a9b-9f9c-a3b06827e098
 langcode: en
 status: true
 dependencies:
@@ -9,8 +8,6 @@ dependencies:
     - entity_browser
     - media
     - user
-_core:
-  default_config_hash: 85zto72twcEElWLXgj466yPSjFezhIaKk6QfLRGmD4w
 id: video_entity_browser
 label: 'Video Entity Browser'
 module: views

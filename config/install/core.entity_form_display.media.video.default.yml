@@ -1,4 +1,3 @@
-uuid: 1d2565d0-a5e1-43b4-a2cf-e1c65640bcf1
 langcode: en
 status: true
 dependencies:
@@ -63,8 +62,6 @@ third_party_settings:
         required_fields: true
       label: 'Video Details'
       region: content
-_core:
-  default_config_hash: u5CEOKcnzHD221LcI06UMFlZ6zVKjSQwZkAEvAw-FqQ
 id: media.video.default
 targetEntityType: media
 bundle: video

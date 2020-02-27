@@ -1,4 +1,3 @@
-uuid: d7df3875-d0ad-44f1-b166-f6929d735dd6
 langcode: en
 status: true
 dependencies:
@@ -14,8 +13,6 @@ third_party_settings:
     restricted_html: '0'
     full_html: '0'
     plain_text: '0'
-_core:
-  default_config_hash: JPwBQ4FZmgytzNGFHdixFYtrGYucVx0a3e8TZoW7SgE
 id: media.video.field_description
 field_name: field_description
 entity_type: media

@@ -1,12 +1,9 @@
-uuid: 5801bbcf-0277-4361-8038-2d018d0c28b4
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.image.field_image
     - paragraphs.paragraphs_type.image
-_core:
-  default_config_hash: O48ohIdztietNQhMoI8yxJxgLqvbNNHK3OG8MTqpddA
 id: paragraph.image.default
 targetEntityType: paragraph
 bundle: image

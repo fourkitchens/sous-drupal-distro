@@ -1,12 +1,9 @@
-uuid: e7cb0231-5c03-46cc-9f53-f7824fc424f0
 langcode: en
 status: true
 dependencies:
   module:
     - link
     - media
-_core:
-  default_config_hash: 0kEzkj0jMzVMePYhG80adYunnKKofG0GHRDs5xysU8g
 id: media.field_transcript
 field_name: field_transcript
 entity_type: media

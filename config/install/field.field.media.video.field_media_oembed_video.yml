@@ -1,12 +1,9 @@
-uuid: 01f57513-939f-42dd-bff0-7f6d9c5a431b
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.media.field_media_oembed_video
     - media.type.video
-_core:
-  default_config_hash: 4GOKFpJZgeovVlhKaxLhDcqH4CJitP2ZBQxaktyECVA
 id: media.video.field_media_oembed_video
 field_name: field_media_oembed_video
 entity_type: media

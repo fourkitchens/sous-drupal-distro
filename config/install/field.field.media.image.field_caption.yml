@@ -1,12 +1,9 @@
-uuid: 8d027076-2e3f-49bc-94a7-d2c0795efd9a
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.media.field_caption
     - media.type.image
-_core:
-  default_config_hash: qYzga6FY0_Wi-73P55G6A0Q6smPjHkxj75ggolldPNI
 id: media.image.field_caption
 field_name: field_caption
 entity_type: media

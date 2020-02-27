@@ -1,4 +1,3 @@
-uuid: 755f1699-b541-40c5-9f88-72868d3ca7f8
 langcode: en
 status: true
 dependencies:
@@ -59,8 +58,6 @@ third_party_settings:
         required_fields: true
       label: Teaser
       region: content
-_core:
-  default_config_hash: 4f73Zul7nnAYZoWTuznK7qqM4Ni_xAgbESwv4xA-WZ8
 id: node.frontpage.default
 targetEntityType: node
 bundle: frontpage

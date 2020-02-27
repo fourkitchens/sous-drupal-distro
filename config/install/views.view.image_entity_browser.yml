@@ -1,4 +1,3 @@
-uuid: 83dc932f-4f47-40b8-8a9b-cc6743ae6855
 langcode: en
 status: true
 dependencies:
@@ -9,8 +8,6 @@ dependencies:
     - entity_browser
     - media
     - user
-_core:
-  default_config_hash: EFfiN96JBgt2taEbU6Ltde-HDvQUNJohQA24AU0dGuw
 id: image_entity_browser
 label: 'Image Entity Browser'
 module: views
