@@ -9,7 +9,7 @@ dependencies:
   module:
     - entity_browser
 _core:
-  default_config_hash: 77iThq2uaHojDKF20emrCZFw5bEz9akALILhq8uCE9E
+  default_config_hash: tsxvsJhCsbYue-rsiW7FlMs6E6e9KWvDNeZX9Uv7jwc
 id: paragraph.video.default
 targetEntityType: paragraph
 bundle: video
@@ -24,9 +24,9 @@ content:
         view_mode: preview
       field_widget_edit: true
       field_widget_remove: true
+      open: true
       selection_mode: selection_append
       field_widget_replace: false
-      open: false
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content

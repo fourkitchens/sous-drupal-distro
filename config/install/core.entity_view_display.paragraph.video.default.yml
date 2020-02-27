@@ -1,9 +1,12 @@
+uuid: 9e374249-d59b-4d2a-b182-f03dfb040e23
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.video.field_video
     - paragraphs.paragraphs_type.video
+_core:
+  default_config_hash: cHGwGEGLx_rd4pY4083GelGB-5YqD7XU-TG7_hytk38
 id: paragraph.video.default
 targetEntityType: paragraph
 bundle: video

@@ -1,9 +1,12 @@
+uuid: 55c2dd33-c3f1-4986-9430-3edb2f5c9a47
 langcode: en
 status: true
 dependencies:
   module:
     - media
     - paragraphs
+_core:
+  default_config_hash: CIPbqmeNyk7G1WDaUy1sB8nB0htDa1ReRZXmZft6Dw0
 id: paragraph.field_video
 field_name: field_video
 entity_type: paragraph

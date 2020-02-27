@@ -1,9 +1,12 @@
+uuid: 92874095-bc19-45d7-ba4b-c1aeadd4ec21
 langcode: en
 status: true
 dependencies:
   module:
     - media
     - taxonomy
+_core:
+  default_config_hash: nsDHegRPxHC91wiJ5U-5EJHt7DPaSRwfi_ASFXLmKJ0
 id: media.field_tags
 field_name: field_tags
 entity_type: media

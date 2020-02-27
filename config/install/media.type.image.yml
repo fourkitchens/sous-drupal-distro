@@ -8,7 +8,7 @@ third_party_settings:
   crop:
     image_field: field_media_image
 _core:
-  default_config_hash: pmEzS5gkJ4wdfj2D-XojYSfAANvryIYT0Hw2GtMrx14
+  default_config_hash: ewURowgTWygb8pJlvp663r4rjzgU7TFMJx0ZUEGC-ps
 id: image
 label: Image
 description: ''

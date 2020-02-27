@@ -15,7 +15,7 @@ third_party_settings:
     full_html: '0'
     plain_text: '0'
 _core:
-  default_config_hash: j-HZ42ghxfl57upak8_NXjwQBgmskuvTb15eNGnhFSM
+  default_config_hash: KWVBY3upyQhDOd0hSZgHbdE34vwnKqE-5hWeB79tQB4
 id: media.image.field_description
 field_name: field_description
 entity_type: media

@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.media.field_copyright
     - media.type.video
+_core:
+  default_config_hash: Ojl6f0Ghs2WaHq9q-MU4qfP7VZhGJ5mYDeSadz0JjtE
 id: media.video.field_copyright
 field_name: field_copyright
 entity_type: media

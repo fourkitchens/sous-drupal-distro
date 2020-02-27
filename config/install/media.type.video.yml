@@ -8,7 +8,7 @@ third_party_settings:
   crop:
     image_field: null
 _core:
-  default_config_hash: gnx0CAVlP7R2LovWwdmZURVwJDInTDurDzuFS7AKsII
+  default_config_hash: hkZp47eqyd7SdrLcuQjb4ND-TYitnWPpjpLcFAK82ck
 id: video
 label: Video
 description: ''

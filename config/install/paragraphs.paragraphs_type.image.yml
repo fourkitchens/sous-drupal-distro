@@ -1,8 +1,12 @@
+uuid: ec020e42-12ce-4442-97b7-4d58cb64f871
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: iTVydmp9NP-iktBEkOtP0GjnnRwFoomqmrrft-uhZYs
 id: image
 label: Image
 icon_uuid: null
+icon_default: null
 description: ''
 behavior_plugins: {  }

@@ -1,8 +1,11 @@
+uuid: b79f20fd-5984-477d-b925-a507d08d3bc3
 langcode: en
 status: true
 dependencies:
   module:
     - media
+_core:
+  default_config_hash: SR1AFxfXUCAAGmpRTqQ_aF-OGackjks4pLO3AIbn-1o
 id: media.field_copyright
 field_name: field_copyright
 entity_type: media

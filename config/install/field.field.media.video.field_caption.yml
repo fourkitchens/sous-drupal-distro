@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.media.field_caption
     - media.type.video
+_core:
+  default_config_hash: 6AQVhVTlXPJZEvA03yriIVcOReKQ8xZkJnSCJ8Kk8wI
 id: media.video.field_caption
 field_name: field_caption
 entity_type: media

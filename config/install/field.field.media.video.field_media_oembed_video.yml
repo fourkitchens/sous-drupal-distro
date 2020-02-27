@@ -6,7 +6,7 @@ dependencies:
     - field.storage.media.field_media_oembed_video
     - media.type.video
 _core:
-  default_config_hash: 7ZWA6XCZs6LFefWUNcfH8wQ0cA2SepIKWhF7wWt_D5A
+  default_config_hash: 4GOKFpJZgeovVlhKaxLhDcqH4CJitP2ZBQxaktyECVA
 id: media.video.field_media_oembed_video
 field_name: field_media_oembed_video
 entity_type: media

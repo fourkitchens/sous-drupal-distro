@@ -63,7 +63,7 @@ third_party_settings:
       label: 'Image Content'
       region: content
 _core:
-  default_config_hash: 8x66crmNubOIfsFFAPbOafcdLX0_ndYK0DoGQprkXQg
+  default_config_hash: Vp9C6nsG1rV576QcO8DSDMwOxjlEP5TtdZ8J9ofzFjc
 id: media.image.default
 targetEntityType: media
 bundle: image

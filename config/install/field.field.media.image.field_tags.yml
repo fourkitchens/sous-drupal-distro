@@ -7,7 +7,7 @@ dependencies:
     - media.type.image
     - taxonomy.vocabulary.tags
 _core:
-  default_config_hash: _eBQA5XFiZu4_k8DJRk-hcerzRm5mEdQvZS1TzjRJlE
+  default_config_hash: Ictk2UkmPkXnfuQhBz5aba5aJNEa9F1v9pOfj7Gtb64
 id: media.image.field_tags
 field_name: field_tags
 entity_type: media

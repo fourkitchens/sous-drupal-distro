@@ -1,9 +1,12 @@
+uuid: 05542a40-c211-4888-8e43-5897a7332331
 langcode: en
 status: true
 dependencies:
   module:
     - media
     - text
+_core:
+  default_config_hash: up64uvCaATbhWmUDNB489tc4UvG9nf9GJS-dRefO6c0
 id: media.field_description
 field_name: field_description
 entity_type: media

@@ -3,9 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - media.type.image
     - views.view.image_entity_browser
   module:
+    - dropzonejs_eb_widget
+    - media
     - views
+_core:
+  default_config_hash: PyJ4VxEbk31iq2yU6ey1hbV00rWkt7T1ZX3_csvNsMo
 name: image_browser
 label: 'Image Browser'
 display: modal
@@ -27,5 +32,24 @@ widgets:
       auto_select: false
     uuid: 32513a06-a8f2-47f0-ad8e-affbdc8acb48
     weight: 1
-    label: 'Image browser'
+    label: 'Image Library'
     id: view
+  e94982b3-8216-431f-b214-9d3b67a90276:
+    settings:
+      form_mode: default
+      media_type: image
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Drop files here to upload them'
+      max_filesize: 100M
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: 'Create Image'
+    uuid: e94982b3-8216-431f-b214-9d3b67a90276
+    weight: 2
+    label: 'Upload Image'
+    id: dropzonejs_media_entity_inline_entity_form

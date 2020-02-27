@@ -6,7 +6,7 @@ dependencies:
     - field.storage.media.field_copyright
     - media.type.image
 _core:
-  default_config_hash: '-kz67Y3kG2rc-eqIc3TD_H80ygpbHm75AAytXwjlQIU'
+  default_config_hash: E9gb-lKpdpqFROVnyC4de1aIdELDQ7wlAb2GjSmR0tA
 id: media.image.field_copyright
 field_name: field_copyright
 entity_type: media

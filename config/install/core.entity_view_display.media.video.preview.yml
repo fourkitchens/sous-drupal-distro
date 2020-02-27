@@ -15,7 +15,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: vbSh9ZH1T2PmhNyfGZIx6CD2km8d_XZx7zGncIUr210
+  default_config_hash: hn47lMf7G9FuGNadXRzxC5w0btXUFbYkmKJ1Gsdwhjw
 id: media.video.preview
 targetEntityType: media
 bundle: video

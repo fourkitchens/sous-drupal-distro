@@ -14,7 +14,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: ScIwKjg9oNWuGab6L733uBy_rNJie6PlDvhSJb85Txw
+  default_config_hash: 4no5ejMmz6LED013YUpWs4XAQZOJl__zYUQ5lwyxXQI
 id: media.image.preview
 targetEntityType: media
 bundle: image

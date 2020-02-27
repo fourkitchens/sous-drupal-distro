@@ -7,6 +7,8 @@ dependencies:
     - media.type.video
   module:
     - link
+_core:
+  default_config_hash: 99COIMbOo7usP5gi28DntecJW4c-oA6N22aqTlOYma4
 id: media.video.field_transcript
 field_name: field_transcript
 entity_type: media

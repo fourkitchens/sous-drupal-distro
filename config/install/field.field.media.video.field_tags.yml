@@ -6,6 +6,8 @@ dependencies:
     - field.storage.media.field_tags
     - media.type.video
     - taxonomy.vocabulary.tags
+_core:
+  default_config_hash: AI6yzTkM4NzhhlI0OM750ov9njdVaf00frkbCsjISDw
 id: media.video.field_tags
 field_name: field_tags
 entity_type: media
