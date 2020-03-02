@@ -36,6 +36,7 @@ textarea.form-textarea {
   box-shadow: inset 0 4px 4px rgba(7, 12, 17, 0.0807786);
   border-radius: 4px;
   height: 40px;
+  width: 100%;
 }
 
 select {
@@ -57,10 +58,11 @@ select {
 }
 
 select:hover {
-  background-image: url(../../assets/images/icon-down.png);
+  background-image: url(../../assets/images/icon-down.png), linear-gradient(180deg, #F1F6F8 0%, #DDE7EA 100%);
+  box-shadow: initial;
 }
 select:focus {
-  background-image: url(../../assets/images/icon-down.png);
+  background-image: url(../../assets/images/icon-down.png), linear-gradient(180deg, #F1F6F8 0%, #DDE7EA 100%);
 }
 
 ul.tips, div.description, .form-item .description {
@@ -208,6 +210,12 @@ h2 {
   color: #fff;
   background-image: none;
   text-shadow: none;
+  transition: all 0.15s;
+}
+
+.button.button--primary:hover {
+  box-shadow: initial;
+  background-color: #10404F;
 }
 
 .page-title {
@@ -236,9 +244,12 @@ h2 {
 
 .progress__track {
   border-radius: 0;
+  border: none;
   background-color: #DDE7EA;
+  box-shadow: initial;
   width: 100%;
   min-height: 4px;
+  height: 10px;
 }
 
 .progress__bar {
@@ -250,12 +261,12 @@ h2 {
   border: none;
   margin: 0;
   width: 40%;
-  height: 16px;
+  height: 10px;
   position: relative;
 }
 
 .progress__bar::after {
-  background: url(../../assets/images/cooking.svg); no-repeat top left;
+  background: url('data:image/png;base64,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'); no-repeat top left;
   content: '';
   width: 68px;
   height: 68px;
@@ -269,6 +280,7 @@ h2 {
 @media (max-width: 48em) {
   .layout-container {
     padding: 40px;
+    box-shadow: 0px 2.76726px 2.21381px rgba(7, 12, 17, 0.0562291), 0px 6.6501px 5.32008px rgba(7, 12, 17, 0.0807786), 0px 12.5216px 10.0172px rgba(7, 12, 17, 0.1), 0px 22.3363px 17.869px rgba(7, 12, 17, 0.119221), 0px 41.7776px 33.4221px rgba(7, 12, 17, 0.143771), 0px 100px 80px rgba(7, 12, 17, 0.2);
   }
   .branding {
     margin: 20px 0 0 0;
