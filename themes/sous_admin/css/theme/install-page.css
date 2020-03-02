@@ -233,6 +233,10 @@ h2 {
   font-size: 0;
 }
 
+.page-title img {
+  width: 182px;
+}
+
 .site-version {
   font-style: normal;
   font-weight: 600;
@@ -244,6 +248,10 @@ h2 {
 
 .branding {
   margin: 20px 0 0 60px;
+}
+
+.branding img {
+  width: 50%;
 }
 
 /* Progress bar */
