@@ -69,7 +69,6 @@ install:
   - paragraphs_features:paragraphs_features
   - pathauto:pathauto
   - redirect:redirect
-  - slick_browser:slick_browser
   - taxonomy_manager:taxonomy_manager
   - token:token
   - twig_tweak:twig_tweak
