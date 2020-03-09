@@ -1,4 +1,3 @@
-uuid: f0d2550c-2972-45eb-a544-289e6f5d635f
 langcode: en
 status: true
 dependencies:
@@ -13,8 +12,6 @@ dependencies:
   module:
     - entity_reference_revisions
     - user
-_core:
-  default_config_hash: HBfUpPPOQM2mep_jZd76JB8B0Uqza5PjdQ01FZ_aXhA
 id: node.page.default
 targetEntityType: node
 bundle: page
