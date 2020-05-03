@@ -62,6 +62,7 @@ install:
   - libraries:libraries
   - linkit:linkit
   - media_entity_browser:media_entity_browser
+  - menu_block:menu_block
   - metatag:metatag
   - metatag:metatag_open_graph
   - metatag:metatag_twitter_cards
