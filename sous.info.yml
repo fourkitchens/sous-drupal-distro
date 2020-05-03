@@ -44,8 +44,9 @@ install:
   - drupal:update
   - drupal:views_ui
   # contrib
-  - blazy:blazy
+  - admin_toolbar:admin_toolbar
   - allowed_formats:allowed_formats
+  - blazy:blazy
   - components:components
   - content_browser:content_browser
   - crop:crop
