@@ -78,7 +78,7 @@
         "npm-asset/imagesloaded": "^3.2.0",
         "bower-asset/masonry-layout": "^4.0.0",
         "npm-asset/slick": "^1.12",
-        "emulsify-ds/emulsify-design-system": "^1.0.0-alpha.5",
+        "emulsify-ds/emulsify-drupal": "^1.0.0-beta.2",
         "drupal/menu_block": "1.x-dev",
         "drupal/admin_toolbar": "2.x-dev"
     },
