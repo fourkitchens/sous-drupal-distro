@@ -50,7 +50,7 @@
         "drupal/allowed_formats": "^1.1",
         "drupal/easy_breadcrumb": "^1.12",
         "drupal/ctools": "^3.2",
-        "drupal/taxonomy_manager": "^1.0",
+        "drupal/taxonomy_manager": "^2.0",
         "drupal/field_group": "^3.0",
         "drupal/linkit": "^5.0-beta12",
         "drupal/libraries": "^3.0",
