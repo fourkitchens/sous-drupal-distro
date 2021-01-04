@@ -52,7 +52,7 @@
         "drupal/ctools": "^3.2",
         "drupal/taxonomy_manager": "^1.0",
         "drupal/field_group": "^3.0",
-        "drupal/linkit": "^4.3",
+        "drupal/linkit": "^5.0-beta12",
         "drupal/libraries": "^3.0",
         "drupal/pathauto": "^1.5",
         "drupal/token": "^1.5",
