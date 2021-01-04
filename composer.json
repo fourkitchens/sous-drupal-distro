@@ -56,7 +56,7 @@
         "drupal/libraries": "^3.0",
         "drupal/pathauto": "^1.5",
         "drupal/token": "^1.5",
-        "drupal/components": "^1.0",
+        "drupal/components": "^2.0",
         "drupal/twig_tweak": "^2.4",
         "drupal/google_tag": "^1.2",
         "drupal/redirect": "^1.4",
