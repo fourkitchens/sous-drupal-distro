@@ -108,7 +108,7 @@
         },
         "patches": {
             "drupal/file_browser": {
-                "3089470": "https://www.drupal.org/files/issues/2019-10-22/profile-library-support-3089470-9.patch"
+                "3089470": "https://www.drupal.org/files/issues/2019-10-23/3089470.15.patch"
             },
             "drupal/content_browser": {
                 "3089478": "https://www.drupal.org/files/issues/2019-10-22/profile-library-support-3089478-2.patch"
