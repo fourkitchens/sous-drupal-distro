@@ -2,7 +2,7 @@ name: Sous
 type: profile
 description: 'A base Drupal distribution profile with a theme based on Emulsify Design System.'
 project: sous
-core: 8.x
+core_version_requirement: ^8.8 || ^9
 version: '8.x-1.0'
 
 distribution:
