@@ -45,7 +45,6 @@
         "oomphinc/composer-installers-extender": "^2.0",
         "cweagans/composer-patches": "^1.6.5",
         "drupal/core": "^9.1.0",
-        "drupal/thunder_admin": "^4.0",
         "drupal/blazy": "^2.0",
         "drupal/allowed_formats": "^1.1",
         "drupal/easy_breadcrumb": "^1.12",
@@ -76,11 +75,11 @@
         "npm-asset/blazy": "^1.8",
         "npm-asset/dropzone": "^5.5.1",
         "npm-asset/imagesloaded": "^3.2.0",
-        "bower-asset/masonry-layout": "^4.0.0",
         "npm-asset/slick": "^1.12",
         "emulsify-ds/emulsify-drupal": "^2.0.1",
         "drupal/menu_block": "1.x-dev",
-        "drupal/admin_toolbar": "2.x-dev"
+        "drupal/admin_toolbar": "2.x-dev",
+        "drupal/gin": "^3.0@alpha",
     },
     "require-dev": {
         "symfony/var-dumper": "4.4.x-dev"
