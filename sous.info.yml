@@ -78,5 +78,5 @@ install:
 
 themes:
   - seven
-  - thunder_admin
+  - claro
   - sous_admin
