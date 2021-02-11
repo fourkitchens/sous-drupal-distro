@@ -79,7 +79,7 @@
         "emulsify-ds/emulsify-drupal": "^2.0.1",
         "drupal/menu_block": "1.x-dev",
         "drupal/admin_toolbar": "2.x-dev",
-        "drupal/gin": "^3.0@alpha",
+        "drupal/gin": "^3.0@alpha"
     },
     "require-dev": {
         "symfony/var-dumper": "4.4.x-dev"
