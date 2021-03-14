@@ -5,7 +5,6 @@ dependencies:
     - field.field.node.page.field_content_body
     - field.field.node.page.field_metadata
     - field.field.node.page.field_seo_title
-    - field.field.node.page.field_tags
     - field.field.node.page.field_teaser_media
     - field.field.node.page.field_teaser_text
     - node.type.page
@@ -29,7 +28,6 @@ content:
 hidden:
   field_metadata: true
   field_seo_title: true
-  field_tags: true
   field_teaser_media: true
   field_teaser_text: true
   links: true
