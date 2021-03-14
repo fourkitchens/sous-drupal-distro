@@ -1,3 +1,4 @@
+uuid: 0f4f4a91-8c17-4720-a39d-217247d07095
 langcode: en
 status: true
 dependencies:
@@ -12,10 +13,10 @@ name: image_browser
 label: 'Image Browser'
 display: modal
 display_configuration:
-  width: '650'
-  height: '500'
+  width: '850'
+  height: ''
   link_text: 'Select Image'
-  auto_open: true
+  auto_open: false
 selection_display: no_display
 selection_display_configuration: {  }
 widget_selector: tabs

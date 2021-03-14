@@ -1,3 +1,4 @@
+uuid: cffbf203-0e35-458f-8feb-4ef04c4e9556
 langcode: en
 status: true
 dependencies:
@@ -10,10 +11,10 @@ name: media_entity_browser_modal
 label: 'Media Entity Browser (Modal)'
 display: modal
 display_configuration:
-  width: '1070'
-  height: '500'
+  width: '850'
+  height: ''
   link_text: 'Select media'
-  auto_open: true
+  auto_open: false
 selection_display: no_display
 selection_display_configuration: {  }
 widget_selector: tabs
