@@ -1,3 +1,4 @@
+uuid: 7bc1b333-efe8-44aa-9604-20752e1eedb9
 langcode: en
 status: true
 dependencies:
@@ -6,7 +7,6 @@ dependencies:
     - field.field.node.page.field_content_body
     - field.field.node.page.field_metadata
     - field.field.node.page.field_seo_title
-    - field.field.node.page.field_tags
     - field.field.node.page.field_teaser_media
     - field.field.node.page.field_teaser_text
     - node.type.page
@@ -38,7 +38,7 @@ third_party_settings:
         - field_teaser_media
         - field_teaser_text
       parent_name: group_main
-      weight: 2
+      weight: 3
       format_type: tab
       region: content
       format_settings:
@@ -53,7 +53,7 @@ third_party_settings:
       children:
         - field_content_body
       parent_name: group_main
-      weight: 4
+      weight: 2
       format_type: tab
       region: content
       format_settings:
@@ -64,34 +64,18 @@ third_party_settings:
         required_fields: true
         formatter: closed
       label: Content
-    group_taxonomies:
-      children:
-        - field_tags
-      parent_name: group_main
-      weight: 3
-      format_type: tab
-      region: content
-      format_settings:
-        id: ''
-        classes: ''
-        description: ''
-        open: true
-        required_fields: true
-        formatter: closed
-      label: Taxonomies
     group_main:
       children:
         - group_header
-        - group_teaser
-        - group_taxonomies
         - group_content
+        - group_teaser
       parent_name: ''
       weight: 0
       format_type: tabs
       format_settings:
+        direction: horizontal
         id: ''
         classes: ''
-        direction: vertical
       label: Main
       region: content
 id: node.page.default
@@ -119,13 +103,14 @@ content:
       autocollapse: none
       closed_mode_threshold: 0
       features:
-        duplicate: duplicate
         collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings: {  }
     region: content
   field_metadata:
     weight: 26
-    settings: {  }
+    settings:
+      sidebar: true
     third_party_settings: {  }
     type: metatag_firehose
     region: content
@@ -137,24 +122,18 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_tags:
-    weight: 11
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_teaser_media:
     weight: 10
     settings:
       entity_browser: media_entity_browser_modal
       field_widget_display: rendered_entity
       field_widget_display_settings:
-        view_mode: default
+        view_mode: preview
       field_widget_edit: true
       field_widget_remove: true
+      open: true
       selection_mode: selection_append
       field_widget_replace: false
-      open: false
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
