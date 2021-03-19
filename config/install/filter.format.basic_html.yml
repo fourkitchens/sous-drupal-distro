@@ -4,8 +4,8 @@ dependencies:
   config:
     - core.entity_view_mode.media.full
   module:
-    - blazy
     - editor
+    - improve_line_breaks_filter
     - media
 name: "Basic HTML"
 format: basic_html
@@ -44,17 +44,6 @@ filters:
     status: true
     weight: 11
     settings: {}
-  blazy_filter:
-    id: blazy_filter
-    provider: blazy
-    status: false
-    weight: 3
-    settings:
-      filter_tags:
-        img: "0"
-        iframe: "0"
-      media_switch: media
-      use_data_uri: "0"
   filter_url:
     id: filter_url
     provider: filter
@@ -73,3 +62,10 @@ filters:
         image: image
       allowed_view_modes:
         full: full
+  improve_line_breaks_filter:
+    id: improve_line_breaks_filter
+    provider: improve_line_breaks_filter
+    status: true
+    weight: 50
+    settings:
+      remove_empty_paragraphs: "1"

@@ -1,8 +1,12 @@
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.media.full
   module:
     - editor
+    - improve_line_breaks_filter
+    - media
 name: "Full HTML"
 format: full_html
 weight: 2
@@ -34,9 +38,18 @@ filters:
   media_embed:
     id: media_embed
     provider: media
-    status: false
+    status: true
     weight: 100
     settings:
       default_view_mode: default
-      allowed_media_types: {}
-      allowed_view_modes: {}
+      allowed_media_types:
+        image: image
+      allowed_view_modes:
+        full: full
+  improve_line_breaks_filter:
+    id: improve_line_breaks_filter
+    provider: improve_line_breaks_filter
+    status: true
+    weight: 50
+    settings:
+      remove_empty_paragraphs: "1"

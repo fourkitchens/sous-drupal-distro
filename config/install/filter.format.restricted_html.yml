@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - improve_line_breaks_filter
     - media
 name: "Restricted HTML"
 format: restricted_html
@@ -44,3 +45,10 @@ filters:
       default_view_mode: default
       allowed_media_types: {}
       allowed_view_modes: {}
+  improve_line_breaks_filter:
+    id: improve_line_breaks_filter
+    provider: improve_line_breaks_filter
+    status: true
+    weight: 50
+    settings:
+      remove_empty_paragraphs: "1"

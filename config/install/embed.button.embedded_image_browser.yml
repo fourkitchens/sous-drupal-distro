@@ -18,7 +18,7 @@ type_settings:
     - image
   display_plugins:
     - "view_mode:media.full"
-  entity_browser: image_browser_embedded_
+  entity_browser: image_browser_embedded
   entity_browser_settings:
     display_review: true
 icon: {}

@@ -8,7 +8,7 @@ dependencies:
     - dropzonejs_eb_widget
     - media
     - views
-name: image_browser_embedded_
+name: image_browser_embedded
 label: "Image Browser (Embedded)"
 display: iframe
 display_configuration:
