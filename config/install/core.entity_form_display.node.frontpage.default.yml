@@ -2,10 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.media_entity_browser_modal
     - field.field.node.frontpage.field_metadata
     - field.field.node.frontpage.field_seo_title
+    - field.field.node.frontpage.field_teaser_media
+    - field.field.node.frontpage.field_teaser_text
     - node.type.frontpage
   module:
+    - entity_browser
     - field_group
     - metatag
     - path
@@ -40,7 +44,9 @@ third_party_settings:
       label: Main
       region: content
     group_teaser:
-      children: {  }
+      children:
+        - field_teaser_text
+        - field_teaser_media
       parent_name: group_main
       weight: 13
       format_type: tab
@@ -78,7 +84,7 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-    field_teaser_media:
+  field_teaser_media:
     weight: 10
     settings:
       entity_browser: media_entity_browser_modal
