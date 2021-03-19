@@ -1,9 +1,9 @@
 name: Sous
 type: profile
-description: 'A base Drupal distribution profile with a theme based on Emulsify Design System.'
+description: "A base Drupal distribution profile with a theme based on Emulsify Design System."
 project: sous
 core_version_requirement: ^8.8 || ^9
-version: '2.x'
+version: "2.x"
 
 distribution:
   name: Sous
@@ -12,12 +12,12 @@ distribution:
 
 # Required modules
 dependencies:
-   - drupal:media
-   - drupal:node
-   - drupal:views
-   - drupal:field
-   - drupal:taxonomy
-   - drupal:user
+  - drupal:media
+  - drupal:node
+  - drupal:views
+  - drupal:field
+  - drupal:taxonomy
+  - drupal:user
 
 install:
   # core
@@ -60,6 +60,7 @@ install:
   - file_browser:file_browser
   - focal_point:focal_point
   - google_tag:google_tag
+  - improve_line_breaks_filter:improve_line_breaks_filter
   - libraries:libraries
   - linkit:linkit
   - media_entity_browser:media_entity_browser
