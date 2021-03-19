@@ -53,7 +53,7 @@ third_party_settings:
       format_settings:
         id: ''
         classes: ''
-        description: ''
+        description: 'These fields are used for metadata purposes internally and externally. They will allow for more control over displays for search engines and social media sharing tools.'
         formatter: closed
         required_fields: true
       label: Teaser
