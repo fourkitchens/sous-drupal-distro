@@ -10,15 +10,19 @@ editor: ckeditor
 settings:
   toolbar:
     rows:
-      - - name: Formatting
+      - 
+        - 
+          name: Formatting
           items:
             - Bold
             - Italic
-        - name: Links
+        - 
+          name: Links
           items:
             - DrupalLink
             - DrupalUnlink
-        - name: Tools
+        - 
+          name: Tools
           items:
             - Source
   plugins:
