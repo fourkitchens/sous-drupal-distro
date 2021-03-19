@@ -2,35 +2,22 @@ langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.basic_html
+    - filter.format.restricted_html
   module:
     - ckeditor
-format: basic_html
+format: restricted_html
 editor: ckeditor
 settings:
   toolbar:
     rows:
-      - - name: "Text Formatting"
+      - - name: Formatting
           items:
             - Bold
             - Italic
-            - Underline
-        - name: Linking
+        - name: Links
           items:
             - DrupalLink
             - DrupalUnlink
-        - name: "Special Formatting"
-          items:
-            - BulletedList
-            - NumberedList
-            - HorizontalRule
-            - Blockquote
-        - name: Media
-          items:
-            - embedded_image_browser
-        - name: "Block Formatting"
-          items:
-            - Format
         - name: Tools
           items:
             - Source
@@ -43,7 +30,7 @@ settings:
     stylescombo:
       styles: ""
 image_upload:
-  status: true
+  status: false
   scheme: public
   directory: inline-images
   max_size: ""

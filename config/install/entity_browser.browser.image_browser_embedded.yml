@@ -1,0 +1,52 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - views.view.image_entity_browser
+  module:
+    - dropzonejs_eb_widget
+    - media
+    - views
+name: image_browser_embedded_
+label: "Image Browser (Embedded)"
+display: iframe
+display_configuration:
+  width: 100%
+  height: "650"
+  link_text: "Select Image(s)"
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {}
+widget_selector: tabs
+widget_selector_configuration: {}
+widgets:
+  e13dd94d-a2c1-49b5-8aa2-286ad58fd7b8:
+    settings:
+      view: image_entity_browser
+      view_display: entity_browser_1
+      submit_text: "Select Image"
+      auto_select: false
+    uuid: e13dd94d-a2c1-49b5-8aa2-286ad58fd7b8
+    weight: 1
+    label: "Image Library"
+    id: view
+  ea05d0d0-2d42-4263-9eaa-c1b2ab6e7b2f:
+    settings:
+      form_mode: default
+      media_type: image
+      upload_location: "public://[date:custom:Y]-[date:custom:m]"
+      dropzone_description: "Drop files here to upload them"
+      max_filesize: 100M
+      extensions: "jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp"
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: "Create Image"
+    uuid: ea05d0d0-2d42-4263-9eaa-c1b2ab6e7b2f
+    weight: 2
+    label: "Upload Image"
+    id: dropzonejs_media_entity_inline_entity_form

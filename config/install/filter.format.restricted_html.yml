@@ -1,7 +1,9 @@
 langcode: en
 status: true
-dependencies: {  }
-name: 'Restricted HTML'
+dependencies:
+  module:
+    - media
+name: "Restricted HTML"
 format: restricted_html
 weight: 1
 filters:
@@ -11,7 +13,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id>'
+      allowed_html: "<a href hreflang alt> <em> <strong>"
       filter_html_help: true
       filter_html_nofollow: false
   filter_autop:
@@ -19,7 +21,7 @@ filters:
     provider: filter
     status: true
     weight: 0
-    settings: {  }
+    settings: {}
   filter_url:
     id: filter_url
     provider: filter
@@ -27,3 +29,18 @@ filters:
     weight: 0
     settings:
       filter_url_length: 72
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {}
+  media_embed:
+    id: media_embed
+    provider: media
+    status: false
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_media_types: {}
+      allowed_view_modes: {}
