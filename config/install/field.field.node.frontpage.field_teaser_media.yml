@@ -4,15 +4,15 @@ dependencies:
   config:
     - field.storage.node.field_teaser_media
     - media.type.image
-    - node.type.page
-id: node.page.field_teaser_media
+    - node.type.frontpage
+id: node.frontpage.field_teaser_media
 field_name: field_teaser_media
 entity_type: node
-bundle: page
+bundle: frontpage
 label: 'Teaser Media'
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -22,7 +22,6 @@ settings:
       image: image
     sort:
       field: _none
-      direction: ASC
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

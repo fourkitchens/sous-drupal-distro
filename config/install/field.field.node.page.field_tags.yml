@@ -2,27 +2,27 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_teaser_media
-    - media.type.image
+    - field.storage.node.field_tags
     - node.type.page
-id: node.page.field_teaser_media
-field_name: field_teaser_media
+    - taxonomy.vocabulary.tags
+id: node.page.field_tags
+field_name: field_tags
 entity_type: node
 bundle: page
-label: 'Teaser Media'
+label: Tags
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:media'
+  handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      image: image
+      tags: tags
     sort:
-      field: _none
-      direction: ASC
+      field: name
+      direction: asc
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference
