@@ -41,3 +41,4 @@ hidden:
   field_content_body: true
   field_metadata: true
   field_seo_title: true
+  field_tags: true

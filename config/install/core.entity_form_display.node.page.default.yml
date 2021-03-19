@@ -63,11 +63,27 @@ third_party_settings:
         required_fields: true
         formatter: closed
       label: Content
+    group_taxonomies:
+      children:
+        - field_tags
+      parent_name: group_main
+      weight: 3
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: true
+        required_fields: true
+        formatter: closed
+      label: Taxonomies
     group_main:
       children:
         - group_header
-        - group_content
         - group_teaser
+        - group_taxonomies
+        - group_content
       parent_name: ''
       weight: 0
       format_type: tabs
