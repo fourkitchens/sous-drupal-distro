@@ -1,0 +1,25 @@
+uuid: 30a1fcc7-2def-4883-8349-b1d5a668ca17
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - entity_browser.browser.image_browser_embedded
+    - media.type.image
+  module:
+    - entity_embed
+    - media
+label: "Embedded Image Browser"
+id: embedded_image_browser
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles:
+    - image
+  display_plugins:
+    - "view_mode:media.full"
+  entity_browser: image_browser_embedded
+  entity_browser_settings:
+    display_review: true
+icon: {}
+icon_uuid: null
