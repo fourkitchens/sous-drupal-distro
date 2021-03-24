@@ -5,6 +5,10 @@ dependencies:
     - "file:file:c053acfc-4afd-4baa-aa5d-78bef1457eb2"
   module:
     - paragraphs_ee
+third_party_settings:
+  paragraphs_ee:
+    paragraphs_categories:
+      text_components: text_components
 id: text
 label: Text
 icon_uuid: c053acfc-4afd-4baa-aa5d-78bef1457eb2

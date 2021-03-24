@@ -5,6 +5,10 @@ dependencies:
     - "file:file:8d3fa77f-16fe-488b-b8a0-8f890c793594"
   module:
     - paragraphs_ee
+third_party_settings:
+  paragraphs_ee:
+    paragraphs_categories:
+      text_components: text_components
 id: text_with_media
 label: "Text with Media"
 icon_uuid: 8d3fa77f-16fe-488b-b8a0-8f890c793594

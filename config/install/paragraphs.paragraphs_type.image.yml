@@ -5,6 +5,10 @@ dependencies:
     - "file:file:0ab249e7-6b1c-4b55-864d-a3cb8ac9652e"
   module:
     - paragraphs_ee
+third_party_settings:
+  paragraphs_ee:
+    paragraphs_categories:
+      media_components: media_components
 id: image
 label: Image
 icon_uuid: 0ab249e7-6b1c-4b55-864d-a3cb8ac9652e

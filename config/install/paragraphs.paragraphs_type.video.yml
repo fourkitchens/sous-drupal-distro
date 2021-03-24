@@ -5,6 +5,10 @@ dependencies:
     - "file:file:aad823a1-6a2b-4033-be46-9082f45e2d2a"
   module:
     - paragraphs_ee
+third_party_settings:
+  paragraphs_ee:
+    paragraphs_categories:
+      media_components: media_components
 id: video
 label: Video
 icon_uuid: aad823a1-6a2b-4033-be46-9082f45e2d2a
