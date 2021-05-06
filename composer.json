@@ -42,7 +42,7 @@
     ],
     "require": {
         "composer/installers": "^1.2",
-        "oomphinc/composer-installers-extender": "^2.0",
+        "oomphinc/composer-installers-extender": "^1.1",
         "cweagans/composer-patches": "^1.6.5",
         "drupal/core": "^9.1.0",
         "drupal/thunder_admin": "^4.0",
