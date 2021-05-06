@@ -4,6 +4,10 @@
 
 A base Drupal distribution profile with a theme based on Emulsify Design System.
 
+## Requirements
+- php - 7.3+
+
+
 ## Install and Use
 
 Follow the documentation found on the [Sous Drupal project](https://github.com/fourkitchens/sous-drupal-project) page.
