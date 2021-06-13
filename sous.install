@@ -4,7 +4,9 @@
  * Install, update and uninstall functions for Sous.
  */
 
+use Drupal\Core\Form\FormStateInterface;
 use Drupal\node\Entity;
+use Drupal\user\Entity\User;
 use Drupal\sous\InstallHelper;
 
 /**
@@ -19,6 +21,11 @@ function sous_install() {
   include_once DRUPAL_ROOT . '/core/profiles/standard/standard.install';
   standard_install();
 
+  // Assign user 1 the "administrator" role.
+  $user = User::load(1);
+  $user->roles[] = 'administrator';
+  $user->save();
+
   // Importing default content into the site.
   if (!\Drupal::service('config.installer')->isSyncing()) {
     \Drupal::classResolver(InstallHelper::class)->importContent();
@@ -31,4 +38,29 @@ function sous_install() {
       ->set('page.404', '/node/3')
       ->save(TRUE);
   }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for install_configure_form().
+ *
+ * Allows the profile to alter the site configuration form.
+ */
+function sous_form_install_configure_form_alter(&$form, FormStateInterface $form_state) {
+  // Add a placeholder as example that one can choose an arbitrary site name.
+  $form['site_information']['site_name']['#attributes']['placeholder'] = t('My Official Site Name');
+
+  // Default site email noreply(at)vardot.com.
+  $form['site_information']['site_mail']['#default_value'] = 'noreply@emulsify.info';
+  $form['site_information']['site_mail']['#attributes']['style'] = 'width: 25em;';
+
+  // Default user 1 username should be 'webmaster'.
+  $form['admin_account']['account']['name']['#default_value'] = 'superuser';
+  $form['admin_account']['account']['name']['#attributes']['disabled'] = TRUE;
+  $form['admin_account']['account']['mail']['#default_value'] = 'superuser@emulsify.info';
+
+  // Default country is US.
+  $form['regional_settings']['site_default_country']['#default_value'] = 'US';
+
+  // Default country is US.
+  $form['update_notifications']['enable_update_status_emails']['#default_value'] = 0;
 }
