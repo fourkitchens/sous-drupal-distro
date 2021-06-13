@@ -73,6 +73,7 @@
         "drupal/focal_point": "^1.2",
         "drupal/crop": "^2.0",
         "drupal/metatag": "1.x-dev",
+        "drupal/roleassign": "1.0-beta1",
         "npm-asset/blazy": "^1.8",
         "npm-asset/dropzone": "^5.5.1",
         "npm-asset/imagesloaded": "^3.2.0",
@@ -103,7 +104,8 @@
             ],
             "web/libraries/{$name}": [
                 "type:npm-asset",
-                "type:drupal-library"
+                "type:drupal-library",
+                "vendor:bower-asset"
             ]
         },
         "patches": {
