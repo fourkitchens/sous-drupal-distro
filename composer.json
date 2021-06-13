@@ -82,7 +82,7 @@
         "drupal/menu_block": "1.x-dev",
         "drupal/admin_toolbar": "2.x-dev",
         "drupal/role_delegation": "1.x-dev",
-        "drupal/login_history": "1.x-dev"
+        "drupal/login_history": "1.1-rc2"
     },
     "require-dev": {
         "symfony/var-dumper": "4.4.x-dev"
