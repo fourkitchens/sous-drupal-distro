@@ -73,7 +73,6 @@
         "drupal/focal_point": "^1.2",
         "drupal/crop": "^2.0",
         "drupal/metatag": "1.x-dev",
-        "drupal/roleassign": "1.0-beta1",
         "npm-asset/blazy": "^1.8",
         "npm-asset/dropzone": "^5.5.1",
         "npm-asset/imagesloaded": "^3.2.0",
@@ -81,7 +80,8 @@
         "npm-asset/slick": "^1.12",
         "emulsify-ds/emulsify-drupal": "^2.0.1",
         "drupal/menu_block": "1.x-dev",
-        "drupal/admin_toolbar": "2.x-dev"
+        "drupal/admin_toolbar": "2.x-dev",
+        "drupal/role_delegation": "1.x-dev"
     },
     "require-dev": {
         "symfony/var-dumper": "4.4.x-dev"
