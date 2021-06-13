@@ -81,7 +81,8 @@
         "emulsify-ds/emulsify-drupal": "^2.0.1",
         "drupal/menu_block": "1.x-dev",
         "drupal/admin_toolbar": "2.x-dev",
-        "drupal/role_delegation": "1.x-dev"
+        "drupal/role_delegation": "1.x-dev",
+        "drupal/login_history": "1.x-dev"
     },
     "require-dev": {
         "symfony/var-dumper": "4.4.x-dev"
