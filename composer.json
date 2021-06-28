@@ -80,7 +80,8 @@
         "npm-asset/slick": "^1.12",
         "emulsify-ds/emulsify-drupal": "^2.0.1",
         "drupal/menu_block": "1.x-dev",
-        "drupal/admin_toolbar": "2.x-dev"
+        "drupal/admin_toolbar": "2.x-dev",
+        "drupal/role_delegation": "1.x-dev"
     },
     "require-dev": {
         "symfony/var-dumper": "4.4.x-dev"
@@ -103,7 +104,8 @@
             ],
             "web/libraries/{$name}": [
                 "type:npm-asset",
-                "type:drupal-library"
+                "type:drupal-library",
+                "vendor:bower-asset"
             ]
         },
         "patches": {

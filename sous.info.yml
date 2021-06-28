@@ -71,6 +71,7 @@ install:
   - paragraphs_features:paragraphs_features
   - pathauto:pathauto
   - redirect:redirect
+  - role_delegation:role_delegation
   - taxonomy_manager:taxonomy_manager
   - token:token
   - twig_tweak:twig_tweak
