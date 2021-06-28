@@ -12,7 +12,7 @@ name: image_browser
 label: 'Image Browser'
 display: modal
 display_configuration:
-  width: '850'
+  width: ''
   height: ''
   link_text: 'Select Image'
   auto_open: false
