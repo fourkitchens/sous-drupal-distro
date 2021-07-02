@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.media_entity_browser_modal
+    - entity_browser.browser.image_browser
     - field.field.node.page.field_content_body
     - field.field.node.page.field_metadata
     - field.field.node.page.field_seo_title
@@ -38,13 +38,13 @@ third_party_settings:
         - field_teaser_media
         - field_teaser_text
       parent_name: group_main
-      weight: 2
+      weight: 3
       format_type: tab
       region: content
       format_settings:
         id: ''
         classes: ''
-        description: ''
+        description: 'These fields are used for metadata purposes internally and externally. They will allow for more control over displays for search engines and social media sharing tools.'
         open: true
         required_fields: true
         formatter: closed
@@ -53,7 +53,7 @@ third_party_settings:
       children:
         - field_content_body
       parent_name: group_main
-      weight: 4
+      weight: 2
       format_type: tab
       region: content
       format_settings:
@@ -89,9 +89,9 @@ third_party_settings:
       weight: 0
       format_type: tabs
       format_settings:
+        direction: horizontal
         id: ''
         classes: ''
-        direction: vertical
       label: Main
       region: content
 id: node.page.default
@@ -101,7 +101,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -119,13 +119,14 @@ content:
       autocollapse: none
       closed_mode_threshold: 0
       features:
-        duplicate: duplicate
         collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings: {  }
     region: content
   field_metadata:
-    weight: 26
-    settings: {  }
+    weight: 6
+    settings:
+      sidebar: true
     third_party_settings: {  }
     type: metatag_firehose
     region: content
@@ -146,15 +147,15 @@ content:
   field_teaser_media:
     weight: 10
     settings:
-      entity_browser: media_entity_browser_modal
+      entity_browser: image_browser
       field_widget_display: rendered_entity
       field_widget_display_settings:
-        view_mode: default
+        view_mode: preview
       field_widget_edit: true
       field_widget_remove: true
+      open: true
       selection_mode: selection_append
       field_widget_replace: false
-      open: false
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
@@ -168,29 +169,15 @@ content:
     region: content
   path:
     type: path
-    weight: 9
+    weight: 3
     region: content
     settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 5
-    region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 8
+    weight: 5
     region: content
     third_party_settings: {  }
   title:
@@ -203,7 +190,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60
@@ -212,8 +199,10 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 10
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  promote: true
+  sticky: true
