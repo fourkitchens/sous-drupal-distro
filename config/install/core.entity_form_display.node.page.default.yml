@@ -15,6 +15,8 @@ dependencies:
     - field_group
     - metatag
     - paragraphs
+    - paragraphs_ee
+    - paragraphs_features
     - path
 third_party_settings:
   field_group:
@@ -109,22 +111,33 @@ content:
     type: paragraphs
     weight: 11
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-      closed_mode: summary
+      title: Component
+      title_plural: Components
+      edit_mode: closed_expand_nested
+      closed_mode: preview
       autocollapse: none
-      closed_mode_threshold: 0
+      closed_mode_threshold: 2
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: _none
       features:
+        add_above: add_above
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
-    third_party_settings: {  }
+    third_party_settings:
+      paragraphs_ee:
+        paragraphs_ee:
+          dialog_style: tiles
+          easy_access_count: '0'
+          dialog_off_canvas: false
+      paragraphs_features:
+        delete_confirmation: true
+        add_in_between: true
+        show_drag_and_drop: true
+        split_text: false
     region: content
   field_metadata:
-    weight: 6
+    weight: 26
     settings:
       sidebar: true
     third_party_settings: {  }
