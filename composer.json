@@ -62,6 +62,8 @@
         "drupal/redirect": "^1.4",
         "drupal/paragraphs": "^1.9",
         "drupal/paragraphs_features": "^1.6",
+        "drupal/paragraphs_collapsible": "^1.2",
+        "drupal/paragraphs_ee": "^1.7",
         "drupal/entity_browser": "^2.2",
         "drupal/file_browser": "^1.2",
         "drupal/entity_embed": "^1.0",
