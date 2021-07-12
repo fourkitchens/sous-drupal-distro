@@ -25,18 +25,17 @@ function sous_install_tasks_alter(array &$tasks, array $install_state) {
  */
 function sous_after_install_finished(array &$install_state) {
 
-  // Assign user 1 the "superuser" role.
+  // Assign user 1 the "superuser" role and block it.
   $user = User::load(1);
   $user->roles[] = 'superuser';
   $user->block();
   $user->save();
 
-  // see: https://stackoverflow.com/questions/6101956/generating-a-random-password-in-php
-  $secure_pass = bin2hex(openssl_random_pseudo_bytes(8));
+  // Use Drupals password generate service.
+  $secure_pass = \Drupal::service('password_generator')->generate();
 
   // Create user 2 and assign "superuser" role.
   $user = User::create();
-  //Mandatory settings
   $user->setPassword($secure_pass);
   $user->enforceIsNew();
   $user->setEmail("superuser@example.com");
