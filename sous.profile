@@ -38,11 +38,11 @@ function sous_after_install_finished(array &$install_state) {
   $user = User::create();
   $user->setPassword($secure_pass);
   $user->enforceIsNew();
-  $user->setEmail("superuser@example.com");
-  $user->setUsername('superuser');
+  $user->setEmail("sous_chef@fourkitchens.com");
+  $user->setUsername('sous_chef');
   $user->addRole('superuser');
   $user->activate();
   $user->save();
 
-  \Drupal::messenger()->addStatus(t('The user accout "superuser" was created. Use ') . $secure_pass . t(' to log in.'));
+  \Drupal::messenger()->addStatus(t('The user accout "sous_chef" was created. Use ') . $secure_pass . t(' to log in.'));
 }
