@@ -69,7 +69,9 @@ install:
   - metatag:metatag_open_graph
   - metatag:metatag_twitter_cards
   - paragraphs:paragraphs
+  - paragraphs_collapsible:paragraphs_collapsible
   - paragraphs_features:paragraphs_features
+  - paragraphs_ee:paragraphs_ee
   - pathauto:pathauto
   - redirect:redirect
   - taxonomy_manager:taxonomy_manager
@@ -79,5 +81,5 @@ install:
 
 themes:
   - seven
-  - thunder_admin
+  - claro
   - sous_admin
