@@ -81,7 +81,7 @@
         "npm-asset/slick": "^1.12",
         "emulsify-ds/emulsify-drupal": "^2.0.1",
         "drupal/menu_block": "1.x-dev",
-        "drupal/admin_toolbar": "^2.5"
+        "drupal/admin_toolbar": "^2.5",
         "drupal/role_delegation": "1.x-dev"
     },
     "require-dev": {
