@@ -1,9 +1,9 @@
 name: Sous
 type: profile
-description: 'A base Drupal distribution profile with a theme based on Emulsify Design System.'
+description: "A base Drupal distribution profile with a theme based on Emulsify Design System."
 project: sous
 core_version_requirement: ^8.8 || ^9
-version: '2.x'
+version: "2.x"
 
 distribution:
   name: Sous
@@ -12,12 +12,12 @@ distribution:
 
 # Required modules
 dependencies:
-   - drupal:media
-   - drupal:node
-   - drupal:views
-   - drupal:field
-   - drupal:taxonomy
-   - drupal:user
+  - drupal:media
+  - drupal:node
+  - drupal:views
+  - drupal:field
+  - drupal:taxonomy
+  - drupal:user
 
 install:
   # core
@@ -68,7 +68,9 @@ install:
   - metatag:metatag_open_graph
   - metatag:metatag_twitter_cards
   - paragraphs:paragraphs
+  - paragraphs_collapsible:paragraphs_collapsible
   - paragraphs_features:paragraphs_features
+  - paragraphs_ee:paragraphs_ee
   - pathauto:pathauto
   - redirect:redirect
   - role_delegation:role_delegation
@@ -79,5 +81,5 @@ install:
 
 themes:
   - seven
-  - thunder_admin
+  - claro
   - sous_admin
