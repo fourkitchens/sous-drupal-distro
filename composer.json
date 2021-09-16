@@ -79,7 +79,7 @@
         "npm-asset/imagesloaded": "^3.2.0",
         "bower-asset/masonry-layout": "^4.0.0",
         "npm-asset/slick": "^1.12",
-        "emulsify-ds/emulsify-drupal": "^2.0.1",
+        "emulsify-ds/emulsify-drupal": "*",
         "drupal/menu_block": "1.x-dev",
         "drupal/admin_toolbar": "^2.5"
     },
