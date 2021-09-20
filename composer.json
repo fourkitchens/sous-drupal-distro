@@ -79,10 +79,11 @@
         "npm-asset/imagesloaded": "^3.2.0",
         "bower-asset/masonry-layout": "^4.0.0",
         "npm-asset/slick": "^1.12",
-        "emulsify-ds/emulsify-drupal": "^2.0.1",
+        "emulsify-ds/emulsify-drupal": "*",
         "drupal/menu_block": "1.x-dev",
         "drupal/admin_toolbar": "^2.5",
-        "drupal/role_delegation": "1.x-dev"
+        "drupal/role_delegation": "1.x-dev",
+        "drupal/improve_line_breaks_filter": "^1.3"
     },
     "require-dev": {
         "symfony/var-dumper": "4.4.x-dev"
