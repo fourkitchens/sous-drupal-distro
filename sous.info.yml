@@ -63,6 +63,7 @@ install:
   - improve_line_breaks_filter:improve_line_breaks_filter
   - libraries:libraries
   - linkit:linkit
+  - login_history:login_history
   - media_entity_browser:media_entity_browser
   - menu_block:menu_block
   - metatag:metatag
