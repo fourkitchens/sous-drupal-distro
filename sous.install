@@ -4,8 +4,10 @@
  * Install, update and uninstall functions for Sous.
  */
 
+use Drupal\Core\Form\FormStateInterface;
 use Drupal\node\Entity;
 use Drupal\sous\InstallHelper;
+use Drupal\Core\Render\Element\PasswordConfirm;
 
 /**
  * Implements hook_install().
@@ -31,4 +33,36 @@ function sous_install() {
       ->set('page.404', '/node/3')
       ->save(TRUE);
   }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for install_configure_form().
+ *
+ * Allows the profile to alter the site configuration form.
+ */
+function sous_form_install_configure_form_alter(&$form, FormStateInterface $form_state) {
+
+  $form['#after_build'][] = 'sous_after_build';
+
+  // Default user 1 username should be 'superuser'.
+  $form['admin_account']['account']['name']['#default_value'] = 'superuser_1';
+  $form['admin_account']['account']['name']['#attributes']['disabled'] = TRUE;
+  $form['admin_account']['account']['name']['#title'] = 'Required Account (disabled)';
+  $form['admin_account']['account']['name']['#description'] = 'The default drupal account required for installation is registered as user ID #1. This account assumes all permissions regardless of assigned role. It will be blocked post-install and a second user (user ID #2) will be generated with the username: <strong>superuser</strong>. It will be automatically assigned to the administrator role and completely managed by the permissions system.';
+
+  // Default country is US.
+  $form['regional_settings']['site_default_country']['#default_value'] = 'US';
+
+  // Default country is US.
+  $form['update_notifications']['enable_update_status_emails']['#default_value'] = 0;
+}
+
+function sous_after_build($form, &$form_state) {
+  $form['admin_account']['account']['pass']['#attributes']['disabled'] = TRUE;
+  $secure_pass = \Drupal::service('password_generator')->generate();
+  $form['admin_account']['account']['pass']['pass1']['#value'] = $secure_pass;
+  $form['admin_account']['account']['pass']['pass1']['#attributes']['value'] = $secure_pass;
+  $form['admin_account']['account']['pass']['pass2']['#value'] = $secure_pass;
+  $form['admin_account']['account']['pass']['pass2']['#attributes']['value'] = $secure_pass;
+  return $form;
 }
