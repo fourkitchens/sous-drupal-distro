@@ -13,8 +13,6 @@ dependencies:
     - media
     - taxonomy
     - user
-_core:
-  default_config_hash: tlurCZ0fwOvPvwvb5P_XTHTqL-lcz5T4D_RqS3w5eiE
 id: media_entity_browsers
 label: 'Media Entity Browsers'
 module: views

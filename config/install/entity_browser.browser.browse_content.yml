@@ -1,4 +1,3 @@
-uuid: 680792ae-318f-4b5b-92c8-2ffb8c49e203
 langcode: und
 status: true
 dependencies:
@@ -9,8 +8,6 @@ dependencies:
       - content_browser
   module:
     - views
-_core:
-  default_config_hash: iC-sfq_NO-1zMEFcPceGdLn4Mgwt68AcuVn2Ez-IV8w
 name: browse_content
 label: 'Browser for Content'
 display: modal

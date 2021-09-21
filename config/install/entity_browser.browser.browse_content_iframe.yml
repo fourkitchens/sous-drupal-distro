@@ -1,4 +1,3 @@
-uuid: a858395e-6ef9-4920-aec0-aa60473a9252
 langcode: und
 status: true
 dependencies:
@@ -9,8 +8,6 @@ dependencies:
       - content_browser
   module:
     - views
-_core:
-  default_config_hash: Of8o-0Iny4Sz9HhfSf9rbcyHPyEBYob7yTUJa-mDs48
 name: browse_content_iframe
 label: 'Browser for Content (iFrame)'
 display: iframe

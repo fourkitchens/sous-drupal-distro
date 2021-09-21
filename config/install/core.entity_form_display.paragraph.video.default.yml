@@ -1,4 +1,3 @@
-uuid: a2ec683e-22c3-434a-96b3-eab648c60028
 langcode: en
 status: true
 dependencies:
@@ -8,8 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.video
   module:
     - entity_browser
-_core:
-  default_config_hash: NRa0694gckC3Ym-8XWpF8mtrEg8w50L7muQsMUF7pP4
 id: paragraph.video.default
 targetEntityType: paragraph
 bundle: video

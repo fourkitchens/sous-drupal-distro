@@ -1,4 +1,3 @@
-uuid: a667d2ec-59d5-40e3-abf6-801f64557375
 langcode: en
 status: true
 dependencies:
@@ -11,8 +10,6 @@ dependencies:
   module:
     - entity_browser
     - text
-_core:
-  default_config_hash: kTAExBjfRBMf4SsboFkM4CD7qtlYh89KU8bmxXA6LVs
 id: paragraph.text_with_media.default
 targetEntityType: paragraph
 bundle: text_with_media

@@ -1,4 +1,3 @@
-uuid: ca3fa2e1-cb89-4772-acc6-692107adfe2a
 langcode: en
 status: true
 dependencies:
@@ -8,8 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.image
   module:
     - entity_browser
-_core:
-  default_config_hash: uPcjlgtT6zSHi2AxAKQ1n0wy4KVSNMzp0J9fpcgkbTM
 id: paragraph.image.default
 targetEntityType: paragraph
 bundle: image
