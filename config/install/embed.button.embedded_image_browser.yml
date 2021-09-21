@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.full
-    - entity_browser.browser.image_media_browser
+    - entity_browser.browser.image_media_browser_embedded
     - media.type.image
   module:
     - entity_embed
@@ -18,7 +18,7 @@ type_settings:
     - image
   display_plugins:
     - "view_mode:media.full"
-  entity_browser: image_media_browser
+  entity_browser: image_media_browser_embedded
   entity_browser_settings:
     display_review: true
 icon: {}
