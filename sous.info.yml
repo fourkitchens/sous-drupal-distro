@@ -54,6 +54,7 @@ install:
   - dropzonejs:dropzonejs
   - easy_breadcrumb:easy_breadcrumb
   - entity_browser:entity_browser
+  - entity_browser:entity_browser_entity_form
   - entity_browser_enhanced:entity_browser_enhanced
   - entity_embed:entity_embed
   - field_group:field_group
