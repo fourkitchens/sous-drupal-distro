@@ -44,5 +44,5 @@ function sous_after_install_finished(array &$install_state) {
   $user->activate();
   $user->save();
 
-  \Drupal::messenger()->addStatus(t('The user accout "sous_chef" was created. Use ') . $secure_pass . t(' to log in.'));
+  \Drupal::messenger()->addStatus(t('The user account "sous_chef" was created. Use ') . $secure_pass . t(' to log in.'));
 }
