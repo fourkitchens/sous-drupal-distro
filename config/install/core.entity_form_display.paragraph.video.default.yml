@@ -1,21 +1,26 @@
+uuid: a2ec683e-22c3-434a-96b3-eab648c60028
 langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.video_browser
+    - entity_browser.browser.video_media_browser
     - field.field.paragraph.video.field_video
     - paragraphs.paragraphs_type.video
   module:
     - entity_browser
+_core:
+  default_config_hash: NRa0694gckC3Ym-8XWpF8mtrEg8w50L7muQsMUF7pP4
 id: paragraph.video.default
 targetEntityType: paragraph
 bundle: video
 mode: default
 content:
   field_video:
+    type: entity_browser_entity_reference
     weight: 0
+    region: content
     settings:
-      entity_browser: video_browser
+      entity_browser: video_media_browser
       field_widget_display: rendered_entity
       field_widget_display_settings:
         view_mode: preview
@@ -25,8 +30,6 @@ content:
       selection_mode: selection_append
       field_widget_replace: false
     third_party_settings: {  }
-    type: entity_browser_entity_reference
-    region: content
 hidden:
   created: true
   status: true
