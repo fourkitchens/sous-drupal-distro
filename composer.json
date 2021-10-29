@@ -48,7 +48,6 @@
         "drupal/blazy": "^2.1",
         "drupal/components": "^2.0",
         "drupal/content_browser": "^1.0",
-        "drupal/core": "^9.2.4",
         "drupal/crop": "^2.1",
         "drupal/ctools": "^3.4",
         "drupal/dropzonejs": "^2.5",
