@@ -63,7 +63,6 @@
         "drupal/libraries": "^3.0",
         "drupal/linkit": "^5.0-beta12",
         "drupal/login_history": "1.1-rc2",
-        "drupal/media_entity_browser": "^2.0",
         "drupal/menu_block": "1.x-dev",
         "drupal/metatag": "1.x-dev",
         "drupal/paragraphs": "^1.12",
