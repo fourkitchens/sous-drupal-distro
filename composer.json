@@ -101,6 +101,9 @@
             "drush/contrib/{$name}": [
                 "type:drupal-drush"
             ],
+            "web/libraries/masonry": [
+                "bower-asset/masonry-layout"
+            ],
             "web/libraries/{$name}": [
                 "type:npm-asset",
                 "type:drupal-library",
