@@ -5,7 +5,7 @@ dependencies:
     - media.type.file
     - views.view.media_entity_browsers
   module:
-    - dropzonejs
+    - dropzonejs_eb_widget
     - media
     - views
 name: file_media_browser
