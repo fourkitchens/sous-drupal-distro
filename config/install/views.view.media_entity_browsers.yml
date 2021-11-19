@@ -400,10 +400,10 @@ display:
           error_message: true
           plugin_id: taxonomy_index_tid
       sorts:
-        status:
-          id: status
+        changed:
+          id: changed
           table: media_field_data
-          field: status
+          field: changed
           relationship: none
           group_type: group
           admin_label: ''
@@ -411,9 +411,10 @@ display:
           exposed: false
           expose:
             label: ''
+          granularity: second
           entity_type: media
-          entity_field: status
-          plugin_id: standard
+          entity_field: changed
+          plugin_id: date
       header: {  }
       footer: {  }
       empty: {  }
