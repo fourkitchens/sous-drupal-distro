@@ -1,4 +1,3 @@
-uuid: 59eaec5b-9b20-4568-8a80-c10b9b74788c
 langcode: en
 status: true
 dependencies:
@@ -7,6 +6,7 @@ dependencies:
     - media.type.file
     - media.type.image
     - media.type.video
+    - taxonomy.vocabulary.media_tags
     - taxonomy.vocabulary.tags
   module:
     - entity_browser
@@ -568,10 +568,11 @@ display:
             identifier: field_tags_target_id
             required: false
             remember: false
-            multiple: false
+            multiple: true
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              superuser: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -585,10 +586,10 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
+          reduce_duplicates: true
           type: textfield
           limit: true
-          vid: tags
+          vid: media_tags
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
