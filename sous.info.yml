@@ -48,7 +48,6 @@ install:
   - allowed_formats:allowed_formats
   - blazy:blazy
   - components:components
-  - content_browser:content_browser
   - crop:crop
   - ctools:ctools
   - dropzonejs:dropzonejs
@@ -59,7 +58,6 @@ install:
   - entity_browser_enhanced:entity_browser_enhanced
   - entity_embed:entity_embed
   - field_group:field_group
-  - file_browser:file_browser
   - focal_point:focal_point
   - google_tag:google_tag
   - improve_line_breaks_filter:improve_line_breaks_filter
