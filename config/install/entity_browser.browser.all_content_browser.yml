@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_entity_browser
+  module:
+    - views
+name: all_content_browser
+label: 'All Content Browser'
+display: modal
+display_configuration:
+  width: '850'
+  height: ''
+  link_text: 'Select Content'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  3e49fad3-27ee-4da5-a93a-a1747879826f:
+    settings:
+      view: content_entity_browser
+      view_display: entity_browser_1
+      submit_text: 'Select Content'
+      auto_select: false
+    uuid: 3e49fad3-27ee-4da5-a93a-a1747879826f
+    weight: 1
+    label: 'Content Library'
+    id: view
