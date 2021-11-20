@@ -52,6 +52,7 @@ install:
   - crop:crop
   - ctools:ctools
   - dropzonejs:dropzonejs
+  - inline_entity_form:inline_entity_form
   - easy_breadcrumb:easy_breadcrumb
   - entity_browser:entity_browser
   - entity_browser:entity_browser_entity_form
