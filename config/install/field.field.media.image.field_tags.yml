@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.storage.media.field_tags
     - media.type.image
-    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.media_tags
 id: media.image.field_tags
 field_name: field_tags
 entity_type: media
@@ -19,10 +19,10 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      tags: tags
+      media_tags: media_tags
     sort:
       field: name
       direction: asc
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: media_tags
 field_type: entity_reference
