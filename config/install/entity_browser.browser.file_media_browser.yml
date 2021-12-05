@@ -2,39 +2,39 @@ langcode: en
 status: true
 dependencies:
   config:
-    - media.type.image
-    - views.view.image_entity_browser
+    - media.type.file
+    - views.view.media_entity_browsers
   module:
     - dropzonejs_eb_widget
     - media
     - views
-name: image_browser
-label: 'Image Browser'
+name: file_media_browser
+label: 'File Media Browser'
 display: modal
 display_configuration:
-  width: ''
+  width: '850'
   height: ''
-  link_text: 'Select Image'
+  link_text: 'Select Files'
   auto_open: false
 selection_display: no_display
 selection_display_configuration: {  }
 widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
-  32513a06-a8f2-47f0-ad8e-affbdc8acb48:
+  47989e37-654a-41e5-90d4-797eec75a349:
     settings:
-      view: image_entity_browser
-      view_display: entity_browser_1
-      submit_text: 'Select Image'
+      view: media_entity_browsers
+      view_display: file_media_browser
+      submit_text: 'Select Files'
       auto_select: false
-    uuid: 32513a06-a8f2-47f0-ad8e-affbdc8acb48
+    uuid: 47989e37-654a-41e5-90d4-797eec75a349
     weight: 1
-    label: 'Image Library'
+    label: 'File Library'
     id: view
-  e94982b3-8216-431f-b214-9d3b67a90276:
+  0cdadfa7-e7b5-4f01-9c7b-89f53368e2c0:
     settings:
       form_mode: default
-      media_type: image
+      media_type: file
       upload_location: 'public://[date:custom:Y]-[date:custom:m]'
       dropzone_description: 'Drop files here to upload them'
       max_filesize: 100M
@@ -45,8 +45,8 @@ widgets:
       resize_quality: !!float 1
       resize_method: contain
       thumbnail_method: contain
-      submit_text: 'Create Image'
-    uuid: e94982b3-8216-431f-b214-9d3b67a90276
+      submit_text: 'Select Files'
+    uuid: 0cdadfa7-e7b5-4f01-9c7b-89f53368e2c0
     weight: 2
-    label: 'Upload Image'
+    label: 'Upload New File'
     id: dropzonejs_media_entity_inline_entity_form

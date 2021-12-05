@@ -48,7 +48,7 @@ function sous_form_install_configure_form_alter(&$form, FormStateInterface $form
   $form['admin_account']['account']['name']['#default_value'] = 'superuser_1';
   $form['admin_account']['account']['name']['#attributes']['disabled'] = TRUE;
   $form['admin_account']['account']['name']['#title'] = 'Required Account (disabled)';
-  $form['admin_account']['account']['name']['#description'] = 'The default drupal account required for installation is registered as user ID #1. This account assumes all permissions regardless of assigned role. It will be blocked post-install and a second user (user ID #2) will be generated with the username: <strong>superuser</strong>. It will be automatically assigned to the administrator role and completely managed by the permissions system.';
+  $form['admin_account']['account']['name']['#description'] = 'The default drupal account required for installation is registered as user ID #1. This account assumes all permissions regardless of assigned role. It will be blocked post-install and a second user (user ID #2) will be generated with the username: <strong>sous_chef</strong>. It will be automatically assigned to the administrator role and completely managed by the permissions system.';
 
   // Default country is US.
   $form['regional_settings']['site_default_country']['#default_value'] = 'US';
