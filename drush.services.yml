@@ -1,0 +1,11 @@
+sous.uninstaller:
+    class: 'Drupal\sous\Commands\Uninstaller'
+    arguments:
+      - '@module_handler'
+      - '@theme_handler'
+      - '@extension.list.profile'
+      - '@file_system'
+      - '%app.root%'
+      - '%install_profile%'
+    tags:
+      - { name: drush.command }
