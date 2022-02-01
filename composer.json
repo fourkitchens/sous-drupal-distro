@@ -53,7 +53,7 @@
         "drupal/crop": "^2.1",
         "drupal/ctools": "^3.4",
         "drupal/dropzonejs": "^2.5",
-        "drupal/easy_breadcrumb": "^1.14",
+        "drupal/easy_breadcrumb": ">=1.15 <2.0.0",
         "drupal/entity_browser": "^2.2",
         "drupal/entity_browser_enhanced": "^1.0",
         "drupal/entity_embed": "^1.1",
