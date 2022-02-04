@@ -83,5 +83,5 @@ install:
 
 themes:
   - seven
-  - claro
+  - gin
   - sous_admin
