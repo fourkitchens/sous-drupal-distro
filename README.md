@@ -13,8 +13,8 @@ Follow the documentation found on the [Sous Drupal project](https://github.com/f
 
 1. Clone this project, create a new branch make your change and push the branch.
 2. In another directory, clone the [sous-drupal-project](https://github.com/fourkitchens/sous-drupal-project) repo.
-3. Change the `"fourkitchens/sous-drupal-distro": "dev-master",` line to match the name of the branch you wish to test or change into the `web/profiles/contrib/sous/` directory and checkout the branch you are looking for if you have already setup the project.
-4. `composer install`
+3. Change the `"fourkitchens/sous-drupal-distro": "dev-2.x",` (located in the `composer.json`) line to match the name of the branch you wish to test or change into the `web/profiles/contrib/sous/` directory and checkout the branch you are looking for if you have already setup the project.
+4.  `composer install`, if you have already run `composer install` then -> `composer update fourkitchens/sous-drupal-distro`
 5. `lando start`
 6. Open the url that lando prints
 7. Follow the setup instructions
