@@ -86,7 +86,7 @@
         "drupal/token": "^1.9",
         "drupal/twig_tweak": "^2.9",
         "drupal/views_ajax_history": "^1.6",
-        "emulsify-ds/emulsify-drupal": "*",
+        "emulsify-ds/emulsify-drupal": "^4.1",
         "npm-asset/blazy": "^1.8",
         "npm-asset/dropzone": "^5.5.1",
         "npm-asset/imagesloaded": "^3.2.0",
