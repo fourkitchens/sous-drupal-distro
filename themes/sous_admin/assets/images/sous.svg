@@ -3,11 +3,19 @@
     :root {
       --sous-logo: #10404f;
       --sous-emulsify: #1a96ca;
+
+      [data-color-mode="dark"] {
+        --sous-logo: #fff;
+      }
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
         --sous-logo: #fff;
+      }
+
+      [data-color-mode="light"] {
+        --sous-logo: #10404f;
       }
     }
 
