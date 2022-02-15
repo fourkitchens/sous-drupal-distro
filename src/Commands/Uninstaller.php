@@ -723,4 +723,5 @@ final class Uninstaller extends DrushCommands implements SiteAliasManagerAwareIn
   private function boldlySay(string $text): void {
     $this->writeln("<options=bold>$text</options=bold>");
   }
+
 }
