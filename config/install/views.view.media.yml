@@ -12,8 +12,6 @@ dependencies:
     - taxonomy
     - text
     - user
-_core:
-  default_config_hash: mF_CA96Q4unIl78LRoLKR5YPUDGdxn0wbSqyUbvrQjc
 id: media
 label: Media
 module: views
