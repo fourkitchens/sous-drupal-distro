@@ -5,8 +5,6 @@ track_enabled_source_entity_types:
   - node
   - block_content
   - menu_link_content
-  - field_config
-  - field_storage_config
   - file
   - media
   - paragraph
@@ -16,8 +14,6 @@ track_enabled_target_entity_types:
   - node
   - block_content
   - menu_link_content
-  - field_config
-  - field_storage_config
   - file
   - media
   - paragraph
