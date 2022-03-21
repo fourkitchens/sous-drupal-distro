@@ -38,6 +38,18 @@ function sous_install() {
 /**
  * Implements hook_form_FORM_ID_alter() for install_configure_form().
  *
+ * Set default lando environment config.
+ */
+function sous_form_install_settings_form_alter(&$form, FormStateInterface $form_state) {
+  $form['settings']['mysql']['database']['#default_value'] = 'drupal9';
+  $form['settings']['mysql']['username']['#default_value'] = 'drupal9';
+  $form['settings']['mysql']['password']['#placeholder'] = 'drupal9';
+  $form['settings']['mysql']['advanced_options']['host']['#default_value'] = 'database';
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for install_configure_form().
+ *
  * Allows the profile to alter the site configuration form.
  */
 function sous_form_install_configure_form_alter(&$form, FormStateInterface $form_state) {
