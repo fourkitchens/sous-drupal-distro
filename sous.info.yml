@@ -49,24 +49,24 @@ install:
   - blazy:blazy
   - ckeditor_browser_context_menu:ckeditor_browser_context_menu
   - components:components
-  - content_browser:content_browser
   - crop:crop
   - ctools:ctools
   - dropzonejs:dropzonejs
+  - dropzonejs:dropzonejs_eb_widget
+  - inline_entity_form:inline_entity_form
   - easy_breadcrumb:easy_breadcrumb
   - entity_browser:entity_browser
+  - entity_browser:entity_browser_entity_form
   - entity_browser_enhanced:entity_browser_enhanced
   - entity_embed:entity_embed
   - entity_usage:entity_usage
   - field_group:field_group
-  - file_browser:file_browser
   - focal_point:focal_point
   - google_tag:google_tag
   - improve_line_breaks_filter:improve_line_breaks_filter
   - libraries:libraries
   - linkit:linkit
   - login_history:login_history
-  - media_entity_browser:media_entity_browser
   - menu_block:menu_block
   - metatag:metatag
   - metatag:metatag_open_graph
