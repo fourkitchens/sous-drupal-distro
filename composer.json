@@ -50,7 +50,7 @@
         "drupal/ckeditor_browser_context_menu": "^1.2",
         "drupal/components": "^2.0",
         "drupal/content_browser": "^1.0",
-        "drupal/core": "^9.3.8",
+        "drupal/core": "^9.3",
         "drupal/crop": "^2.1",
         "drupal/ctools": "^3.4",
         "drupal/diff": "^1.0",
