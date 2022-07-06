@@ -52,7 +52,7 @@
         "drupal/content_browser": "^1.0",
         "drupal/core": "^9.3.8",
         "drupal/crop": "^2.1",
-        "drupal/ctools": "^3.4",
+        "drupal/ctools": "^4.0",
         "drupal/diff": "^1.0",
         "drupal/dropzonejs": "^2.5",
         "drupal/easy_breadcrumb": ">=1.15 <3.0.0",
