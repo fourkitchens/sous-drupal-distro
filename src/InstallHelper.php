@@ -141,14 +141,20 @@ class InstallHelper implements ContainerInjectionInterface {
       }
     }
 
+    // Change Entity Browser icon.
     $filePath = "{$this->extensionList->getPath('sous')}/assets/scaffold/files/entity-browser-icon.png";
     $fileName = basename($filePath);
+    // Icons uploaded into 'embed_buttons'
+    // entities get saved into the
+    // following path:
     $directory = 'public://embed_buttons';
     $iconDestination = "{$directory}/{$fileName}";
 
     $this->fileSystem->prepareDirectory($directory, FileSystemInterface:: CREATE_DIRECTORY | FileSystemInterface::MODIFY_PERMISSIONS);
     $this->fileSystem->copy($filePath, $iconDestination, FileSystemInterface::EXISTS_REPLACE);
 
+    // Create the file in the
+    // Drupal system.
     $file = File::create([
       'filename' => $fileName,
       'uri' => $iconDestination,
@@ -158,9 +164,13 @@ class InstallHelper implements ContainerInjectionInterface {
     $file->setPermanent();
     $file->save();
 
+    // Load the current 'embed_button' entities.
     /** @var \Drupal\embed\EmbedButtonInterface[] */
     $entities = $this->entityTypeManager->getStorage('embed_button')->loadMultiple();
 
+    // On installation, there should be only
+    // two Entity Browser entities, which are
+    // our targets.
     foreach ($entities as $entity) {
       $entity->set('icon', EmbedButton::convertImageToEncodedData($file->getFileUri()));
       $entity->save();
