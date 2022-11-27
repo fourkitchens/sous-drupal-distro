@@ -161,7 +161,6 @@ class InstallHelper implements ContainerInjectionInterface {
       'status' => 1,
       'uid' => 1,
     ]);
-    $file->setPermanent();
     $file->save();
 
     // Load the current 'embed_button' entities.
