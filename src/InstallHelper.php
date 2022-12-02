@@ -143,6 +143,21 @@ class InstallHelper implements ContainerInjectionInterface {
 
     // Change Entity Browser icon.
     $filePath = "{$this->extensionList->getPath('sous')}/assets/scaffold/files/entity-browser-icon.png";
+    $this->changeEmbedButtonImage($filePath, 'embedded_image_browser');
+  }
+
+  /**
+   * Change an 'embed_button' entity button.
+   *
+   * @param string $filePath
+   *    The path to the icon.
+   * @param string $embedButtonId
+   *    The embed button ID to change.
+   * @throws \Drupal\Core\File\Exception\FileException
+   *    Implementation may throw FileException or its subtype on failure.
+   * @return void
+   */
+  public function changeEmbedButtonImage(string $filePath, string $embedButtonId) {
     $fileName = basename($filePath);
     // Icons uploaded into 'embed_buttons'
     // entities get saved into the
@@ -163,14 +178,11 @@ class InstallHelper implements ContainerInjectionInterface {
     ]);
     $file->save();
 
-    // Load the current 'embed_button' entities.
-    /** @var \Drupal\embed\EmbedButtonInterface[] */
-    $entities = $this->entityTypeManager->getStorage('embed_button')->loadMultiple();
+    // Load the 'embed_button' entity.
+    /** @var \Drupal\embed\EmbedButtonInterface */
+    $entity = $this->entityTypeManager->getStorage('embed_button')->load($embedButtonId);
 
-    // On installation, there should be only
-    // two Entity Browser entities, which are
-    // our targets.
-    foreach ($entities as $entity) {
+    if ($entity) {
       $entity->set('icon', EmbedButton::convertImageToEncodedData($file->getFileUri()));
       $entity->save();
     }
