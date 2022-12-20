@@ -8,6 +8,21 @@ use Drupal\user\Entity\User;
  */
 
 /**
+ * Implements hook_install_tasks().
+ */
+function sous_install_tasks(array $install_state) {
+  $tasks = [
+    'install_optional_paragraph_modules' => [
+      'display_name' => t('Select optional paragraph modules'),
+      'type' => 'form',
+      'function' => '\Drupal\sous\SelectParagraphForm',
+    ]
+  ];
+
+  return $tasks;
+}
+
+/**
  * Implements hook_install_tasks_alter().
  */
 function sous_install_tasks_alter(array &$tasks, array $install_state) {
