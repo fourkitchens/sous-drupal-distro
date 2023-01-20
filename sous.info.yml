@@ -1,9 +1,9 @@
 name: Sous
 type: profile
-description: 'A base Drupal distribution profile with a theme based on Emulsify Design System.'
+description: "A base Drupal distribution profile with a theme based on Emulsify Design System."
 project: sous
 core_version_requirement: ^8.8 || ^9
-version: '2.x'
+version: "4.x"
 
 distribution:
   name: Sous
@@ -12,12 +12,12 @@ distribution:
 
 # Required modules
 dependencies:
-   - drupal:media
-   - drupal:node
-   - drupal:views
-   - drupal:field
-   - drupal:taxonomy
-   - drupal:user
+  - drupal:media
+  - drupal:node
+  - drupal:views
+  - drupal:field
+  - drupal:taxonomy
+  - drupal:user
 
 install:
   # core
@@ -47,30 +47,37 @@ install:
   - admin_toolbar:admin_toolbar
   - allowed_formats:allowed_formats
   - blazy:blazy
+  - ckeditor_browser_context_menu:ckeditor_browser_context_menu
   - components:components
-  - content_browser:content_browser
   - crop:crop
   - ctools:ctools
   - dropzonejs:dropzonejs
+  - dropzonejs:dropzonejs_eb_widget
+  - inline_entity_form:inline_entity_form
   - easy_breadcrumb:easy_breadcrumb
   - entity_browser:entity_browser
+  - entity_browser:entity_browser_entity_form
   - entity_browser_enhanced:entity_browser_enhanced
   - entity_embed:entity_embed
+  - entity_usage:entity_usage
   - field_group:field_group
-  - file_browser:file_browser
   - focal_point:focal_point
   - google_tag:google_tag
+  - improve_line_breaks_filter:improve_line_breaks_filter
   - libraries:libraries
   - linkit:linkit
-  - media_entity_browser:media_entity_browser
+  - login_history:login_history
   - menu_block:menu_block
   - metatag:metatag
   - metatag:metatag_open_graph
   - metatag:metatag_twitter_cards
   - paragraphs:paragraphs
+  - paragraphs_collapsible:paragraphs_collapsible
   - paragraphs_features:paragraphs_features
+  - paragraphs_ee:paragraphs_ee
   - pathauto:pathauto
   - redirect:redirect
+  - role_delegation:role_delegation
   - taxonomy_manager:taxonomy_manager
   - token:token
   - twig_tweak:twig_tweak
@@ -78,5 +85,5 @@ install:
 
 themes:
   - seven
-  - claro
+  - gin
   - sous_admin

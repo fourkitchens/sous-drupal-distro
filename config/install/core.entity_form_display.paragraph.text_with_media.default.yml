@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.media_entity_browser
+    - entity_browser.browser.image_video_media_browser
     - field.field.paragraph.text_with_media.field_media
     - field.field.paragraph.text_with_media.field_media_alignment
     - field.field.paragraph.text_with_media.field_text
@@ -16,19 +16,20 @@ bundle: text_with_media
 mode: default
 content:
   field_media:
+    type: entity_browser_entity_reference
     weight: 1
+    region: content
     settings:
-      entity_browser: media_entity_browser
-      field_widget_display: label
+      entity_browser: image_video_media_browser
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: preview
       field_widget_edit: true
       field_widget_remove: true
+      open: true
       selection_mode: selection_append
       field_widget_replace: false
-      open: false
-      field_widget_display_settings: {  }
     third_party_settings: {  }
-    type: entity_browser_entity_reference
-    region: content
   field_media_alignment:
     weight: 2
     settings: {  }

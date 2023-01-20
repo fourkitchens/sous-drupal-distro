@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.image_browser
+    - entity_browser.browser.image_media_browser
     - field.field.paragraph.image.field_image
     - paragraphs.paragraphs_type.image
   module:
@@ -13,9 +13,11 @@ bundle: image
 mode: default
 content:
   field_image:
+    type: entity_browser_entity_reference
     weight: 0
+    region: content
     settings:
-      entity_browser: image_browser
+      entity_browser: image_media_browser
       field_widget_display: rendered_entity
       field_widget_display_settings:
         view_mode: preview
@@ -25,8 +27,6 @@ content:
       selection_mode: selection_append
       field_widget_replace: false
     third_party_settings: {  }
-    type: entity_browser_entity_reference
-    region: content
 hidden:
   created: true
   status: true

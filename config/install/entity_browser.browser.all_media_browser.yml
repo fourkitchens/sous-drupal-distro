@@ -1,0 +1,83 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.file
+    - media.type.image
+    - views.view.media_entity_browsers
+  module:
+    - dropzonejs_eb_widget
+    - entity_browser_entity_form
+    - media
+    - views
+name: all_media_browser
+label: 'All Media Browser'
+display: modal
+display_configuration:
+  width: '850'
+  height: ''
+  link_text: 'Select Media'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  3004c61c-4650-44c6-bce4-765778c7dfdd:
+    settings:
+      view: media_entity_browsers
+      view_display: all_media_browser
+      submit_text: 'Select Media'
+      auto_select: false
+    uuid: 3004c61c-4650-44c6-bce4-765778c7dfdd
+    weight: 1
+    label: 'Media Library'
+    id: view
+  8eaa9cb1-1c69-419c-bbb5-97b961da02a5:
+    settings:
+      form_mode: default
+      media_type: image
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Drop image files here to upload them'
+      max_filesize: 100M
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: 'Save Image'
+    uuid: 8eaa9cb1-1c69-419c-bbb5-97b961da02a5
+    weight: 2
+    label: 'Upload Image'
+    id: dropzonejs_media_entity_inline_entity_form
+  0fcadd62-7056-4865-a7b2-6940075f14af:
+    settings:
+      entity_type: media
+      bundle: video
+      form_mode: default
+      submit_text: 'Save Video'
+    uuid: 0fcadd62-7056-4865-a7b2-6940075f14af
+    weight: 3
+    label: 'Add New Video'
+    id: entity_form
+  05a2675a-097a-4ed5-8cbc-5243ca8ec809:
+    settings:
+      form_mode: default
+      media_type: file
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Drop files here to upload them'
+      max_filesize: 100M
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: 'Select Files'
+    uuid: 05a2675a-097a-4ed5-8cbc-5243ca8ec809
+    weight: 4
+    label: 'Upload File'
+    id: dropzonejs_media_entity_inline_entity_form

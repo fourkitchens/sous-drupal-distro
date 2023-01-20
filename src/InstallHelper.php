@@ -4,8 +4,11 @@ namespace Drupal\sous;
 
 use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\Extension\ExtensionList;
 use Drupal\Core\File\FileSystemInterface;
 use Drupal\Core\State\StateInterface;
+use Drupal\embed\Entity\EmbedButton;
+use Drupal\file\Entity\File;
 use Drupal\media\Entity\Media;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -38,6 +41,13 @@ class InstallHelper implements ContainerInjectionInterface {
   protected $fileSystem;
 
   /**
+   * Extensio list.
+   *
+   * @var \Drupal\Core\Extension\ExtensionList
+   */
+  protected $extensionList;
+
+  /**
    * Constructs a new InstallHelper object.
    *
    * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entityTypeManager
@@ -46,11 +56,19 @@ class InstallHelper implements ContainerInjectionInterface {
    *   State service.
    * @param \Drupal\Core\File\FileSystemInterface $fileSystem
    *   The file system.
+   * @param \Drupal\Core\Extension\ExtensionList $extensionList
+   *    Extension list.
    */
-  public function __construct(EntityTypeManagerInterface $entityTypeManager, StateInterface $state, FileSystemInterface $fileSystem) {
+  public function __construct(
+    EntityTypeManagerInterface $entityTypeManager,
+    StateInterface $state,
+    FileSystemInterface $fileSystem,
+    ExtensionList $extensionList
+  ) {
     $this->entityTypeManager = $entityTypeManager;
     $this->state = $state;
     $this->fileSystem = $fileSystem;
+    $this->extensionList = $extensionList;
   }
 
   /**
@@ -60,7 +78,8 @@ class InstallHelper implements ContainerInjectionInterface {
     return new static(
       $container->get('entity_type.manager'),
       $container->get('state'),
-      $container->get('file_system')
+      $container->get('file_system'),
+      $container->get('extension.list.module')
     );
   }
 
@@ -120,6 +139,52 @@ class InstallHelper implements ContainerInjectionInterface {
           $entity->save();
         }
       }
+    }
+
+    // Change Entity Browser icon.
+    $filePath = "{$this->extensionList->getPath('sous')}/assets/scaffold/files/entity-browser-icon.png";
+    $this->changeEmbedButtonImage($filePath, 'embedded_image_browser');
+  }
+
+  /**
+   * Change an 'embed_button' entity button.
+   *
+   * @param string $filePath
+   *    The path to the icon.
+   * @param string $embedButtonId
+   *    The embed button ID to change.
+   * @throws \Drupal\Core\File\Exception\FileException
+   *    Implementation may throw FileException or its subtype on failure.
+   * @return void
+   */
+  public function changeEmbedButtonImage(string $filePath, string $embedButtonId) {
+    $fileName = basename($filePath);
+    // Icons uploaded into 'embed_buttons'
+    // entities get saved into the
+    // following path:
+    $directory = 'public://embed_buttons';
+    $iconDestination = "{$directory}/{$fileName}";
+
+    $this->fileSystem->prepareDirectory($directory, FileSystemInterface:: CREATE_DIRECTORY | FileSystemInterface::MODIFY_PERMISSIONS);
+    $this->fileSystem->copy($filePath, $iconDestination, FileSystemInterface::EXISTS_REPLACE);
+
+    // Create the file in the
+    // Drupal system.
+    $file = File::create([
+      'filename' => $fileName,
+      'uri' => $iconDestination,
+      'status' => 1,
+      'uid' => 1,
+    ]);
+    $file->save();
+
+    // Load the 'embed_button' entity.
+    /** @var \Drupal\embed\EmbedButtonInterface */
+    $entity = $this->entityTypeManager->getStorage('embed_button')->load($embedButtonId);
+
+    if ($entity) {
+      $entity->set('icon', EmbedButton::convertImageToEncodedData($file->getFileUri()));
+      $entity->save();
     }
   }
 }
