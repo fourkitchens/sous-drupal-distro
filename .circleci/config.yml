@@ -33,4 +33,4 @@ workflows:
             branches:
               only:
                 - '4.x'
-                - 'master'
+                - 'main'
