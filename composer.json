@@ -91,8 +91,7 @@
         "npm-asset/blazy": "^1.8",
         "npm-asset/dropzone": "^5.5.1",
         "npm-asset/imagesloaded": "^3.2.0",
-        "npm-asset/slick": "^1.12",
-        "oomphinc/composer-installers-extender": "^2.0"
+        "npm-asset/slick": "^1.12"
     },
     "require-dev": {
         "symfony/var-dumper": "4.4.x-dev",
@@ -133,6 +132,12 @@
                     "path": "assets/scaffold/files/development.services.yml",
                     "overwrite": true
                 }
+            }
+        },
+        "patches": {
+            "field_group": {
+                "HTML5 Validation Prevents Submission in Tabs": "https://www.drupal.org/files/issues/2021-07-22/2969051-37.patch",
+                "Ensure visibility of invalid fields (JS)": "https://www.drupal.org/files/issues/2021-02-21/2787179-highlight-html5-validation-60.patch"
             }
         }
     },
